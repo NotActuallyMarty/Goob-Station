@@ -1,3 +1,25 @@
+// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 y7o4ka <56449763+4310V343k@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
 using Content.Client.Administration.Managers;
 using Content.Client.Stylesheets;
@@ -70,22 +92,7 @@ namespace Content.Client.Changelog
                 Tabs.SetTabTitle(i++, Loc.GetString($"changelog-tab-title-{changelog.Name}"));
             }
 
-            // Try to get the current version from the build.json file
-            var version = _cfg.GetCVar(CVars.BuildVersion);
-            var forkId = _cfg.GetCVar(CVars.BuildForkId);
-
-            var versionText = Loc.GetString("changelog-version-unknown");
-
-            // Make sure these aren't empty, like in a dev env
-            if (!string.IsNullOrEmpty(version) && !string.IsNullOrEmpty(forkId))
-            {
-                versionText = Loc.GetString("changelog-version-tag",
-                    ("fork", forkId),
-                    ("version", version[..7])); // Only show the first 7 characters
-            }
-
-            // if else statements are ugly, shut up
-            VersionLabel.Text = versionText;
+            VersionLabel.Text = _changelog.GetClientVersion();
 
             TabsUpdated();
         }

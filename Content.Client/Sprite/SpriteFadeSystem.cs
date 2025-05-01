@@ -1,3 +1,16 @@
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client.Gameplay;
 using Content.Shared.Sprite;
 using Robust.Client.GameObjects;
@@ -19,12 +32,21 @@ public sealed class SpriteFadeSystem : EntitySystem
 
     private readonly HashSet<FadingSpriteComponent> _comps = new();
 
+    private EntityQuery<SpriteComponent> _spriteQuery;
+    private EntityQuery<SpriteFadeComponent> _fadeQuery;
+    private EntityQuery<FadingSpriteComponent> _fadingQuery;
+
     private const float TargetAlpha = 0.4f;
     private const float ChangeRate = 1f;
 
     public override void Initialize()
     {
         base.Initialize();
+
+        _spriteQuery = GetEntityQuery<SpriteComponent>();
+        _fadeQuery = GetEntityQuery<SpriteFadeComponent>();
+        _fadingQuery = GetEntityQuery<FadingSpriteComponent>();
+
         SubscribeLocalEvent<FadingSpriteComponent, ComponentShutdown>(OnFadingShutdown);
     }
 
@@ -41,28 +63,26 @@ public sealed class SpriteFadeSystem : EntitySystem
         base.FrameUpdate(frameTime);
 
         var player = _playerManager.LocalEntity;
-        var spriteQuery = GetEntityQuery<SpriteComponent>();
         var change = ChangeRate * frameTime;
 
         if (TryComp(player, out TransformComponent? playerXform) &&
             _stateManager.CurrentState is GameplayState state &&
-            spriteQuery.TryGetComponent(player, out var playerSprite))
+            _spriteQuery.TryGetComponent(player, out var playerSprite))
         {
-            var fadeQuery = GetEntityQuery<SpriteFadeComponent>();
             var mapPos = _transform.GetMapCoordinates(_playerManager.LocalEntity!.Value, xform: playerXform);
 
             // Also want to handle large entities even if they may not be clickable.
             foreach (var ent in state.GetClickableEntities(mapPos))
             {
                 if (ent == player ||
-                    !fadeQuery.HasComponent(ent) ||
-                    !spriteQuery.TryGetComponent(ent, out var sprite) ||
+                    !_fadeQuery.HasComponent(ent) ||
+                    !_spriteQuery.TryGetComponent(ent, out var sprite) ||
                     sprite.DrawDepth < playerSprite.DrawDepth)
                 {
                     continue;
                 }
 
-                if (!TryComp<FadingSpriteComponent>(ent, out var fading))
+                if (!_fadingQuery.TryComp(ent, out var fading))
                 {
                     fading = AddComp<FadingSpriteComponent>(ent);
                     fading.OriginalAlpha = sprite.Color.A;
@@ -84,7 +104,7 @@ public sealed class SpriteFadeSystem : EntitySystem
             if (_comps.Contains(comp))
                 continue;
 
-            if (!spriteQuery.TryGetComponent(uid, out var sprite))
+            if (!_spriteQuery.TryGetComponent(uid, out var sprite))
                 continue;
 
             var newColor = Math.Min(sprite.Color.A + change, comp.OriginalAlpha);

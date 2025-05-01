@@ -1,3 +1,16 @@
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Simon <63975668+Simyon264@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SpeltIncorrectyl <66873282+SpeltIncorrectyl@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 tips-dataset-1 = If you're on fire, you can click the alert on the right of your screen to stop, drop, and roll.
 tips-dataset-2 = You can view and edit all keybindings used in-game at any time through the Options menu.
 tips-dataset-3 = You can access the in-game guidebook through the escape menu, or by pressing Numpad 0 by default.
@@ -62,7 +75,7 @@ tips-dataset-60 = As the Clown, spice your gimmicks up! Nobody likes a one-trick
 tips-dataset-61 = As the Clown, if you lose your banana peels and soap, you can still slip people with your PDA! Honk!
 tips-dataset-62 = As the Chef, your knife can act as a weapon in an emergency.
 tips-dataset-63 = As the Chef, you can sneak liquids into your foods. As a traitor, putting a little bit of amatoxin or other poison can greatly annoy the crew!
-tips-dataset-64 = As the Mime, your oath of silence is your source of power. Breaking it robs you of your powers and of your honor.
+tips-dataset-64 = As the Mime, your vow to not speak or write is your source of power. Breaking it robs you of your powers and of your honor.
 tips-dataset-65 = As the Lawyer, try to negotiate with the Warden if sentences seem too high for the crime.
 tips-dataset-66 = As a Security Officer, communicate and coordinate with your fellow officers using the security radio channel to avoid confusion.
 tips-dataset-67 = As a Security Officer, remember that correlation does not equal causation. Someone may have just been at the wrong place at the wrong time!

@@ -1,4 +1,66 @@
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
+using Content.Shared.CCVar;
+using Content.Shared.Chemistry;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint;
 using Content.Shared.Inventory;
@@ -7,6 +69,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Radiation.Events;
 using Content.Shared.Rejuvenate;
+using Robust.Shared.Configuration;
 using Robust.Shared.GameStates;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
@@ -27,10 +90,23 @@ namespace Content.Shared.Damage
         [Dependency] private readonly SharedBodySystem _body = default!; // Shitmed Change
         [Dependency] private readonly IRobustRandom _random = default!; // Shitmed Change
         [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
+        [Dependency] private readonly IConfigurationManager _config = default!;
+        [Dependency] private readonly SharedChemistryGuideDataSystem _chemistryGuideData = default!;
 
         private EntityQuery<AppearanceComponent> _appearanceQuery;
         private EntityQuery<DamageableComponent> _damageableQuery;
         private EntityQuery<MindContainerComponent> _mindContainerQuery;
+
+        public float UniversalAllDamageModifier { get; private set; } = 1f;
+        public float UniversalAllHealModifier { get; private set; } = 1f;
+        public float UniversalMeleeDamageModifier { get; private set; } = 1f;
+        public float UniversalProjectileDamageModifier { get; private set; } = 1f;
+        public float UniversalHitscanDamageModifier { get; private set; } = 1f;
+        public float UniversalReagentDamageModifier { get; private set; } = 1f;
+        public float UniversalReagentHealModifier { get; private set; } = 1f;
+        public float UniversalExplosionDamageModifier { get; private set; } = 1f;
+        public float UniversalThrownDamageModifier { get; private set; } = 1f;
+        public float UniversalTopicalsHealModifier { get; private set; } = 1f;
 
         public override void Initialize()
         {
@@ -43,6 +119,36 @@ namespace Content.Shared.Damage
             _appearanceQuery = GetEntityQuery<AppearanceComponent>();
             _damageableQuery = GetEntityQuery<DamageableComponent>();
             _mindContainerQuery = GetEntityQuery<MindContainerComponent>();
+
+            // Damage modifier CVars are updated and stored here to be queried in other systems.
+            // Note that certain modifiers requires reloading the guidebook.
+            Subs.CVar(_config, CCVars.PlaytestAllDamageModifier, value =>
+            {
+                UniversalAllDamageModifier = value;
+                _chemistryGuideData.ReloadAllReagentPrototypes();
+            }, true);
+            Subs.CVar(_config, CCVars.PlaytestAllHealModifier, value =>
+            {
+                UniversalAllHealModifier = value;
+                _chemistryGuideData.ReloadAllReagentPrototypes();
+            }, true);
+            Subs.CVar(_config, CCVars.PlaytestProjectileDamageModifier, value => UniversalProjectileDamageModifier = value, true);
+            Subs.CVar(_config, CCVars.PlaytestMeleeDamageModifier, value => UniversalMeleeDamageModifier = value, true);
+            Subs.CVar(_config, CCVars.PlaytestProjectileDamageModifier, value => UniversalProjectileDamageModifier = value, true);
+            Subs.CVar(_config, CCVars.PlaytestHitscanDamageModifier, value => UniversalHitscanDamageModifier = value, true);
+            Subs.CVar(_config, CCVars.PlaytestReagentDamageModifier, value =>
+            {
+                UniversalReagentDamageModifier = value;
+                _chemistryGuideData.ReloadAllReagentPrototypes();
+            }, true);
+            Subs.CVar(_config, CCVars.PlaytestReagentHealModifier, value =>
+            {
+                 UniversalReagentHealModifier = value;
+                 _chemistryGuideData.ReloadAllReagentPrototypes();
+            }, true);
+            Subs.CVar(_config, CCVars.PlaytestExplosionDamageModifier, value => UniversalExplosionDamageModifier = value, true);
+            Subs.CVar(_config, CCVars.PlaytestThrownDamageModifier, value => UniversalThrownDamageModifier = value, true);
+            Subs.CVar(_config, CCVars.PlaytestTopicalsHealModifier, value => UniversalTopicalsHealModifier = value, true);
         }
 
         /// <summary>
@@ -133,7 +239,10 @@ namespace Content.Shared.Damage
         public DamageSpecifier? TryChangeDamage(EntityUid? uid, DamageSpecifier damage, bool ignoreResistances = false,
             bool interruptsDoAfters = true, DamageableComponent? damageable = null, EntityUid? origin = null,
             // Shitmed Change
-            bool? canSever = true, bool? canEvade = false, float? partMultiplier = 1.00f, TargetBodyPart? targetPart = null)
+            bool? canSever = true, bool? canEvade = false, float? partMultiplier = 1.00f, TargetBodyPart? targetPart = null,
+            float armorPenetration = 0f,
+            // Goobstation
+            bool heavyAttack = false)
         {
             if (!uid.HasValue || !_damageableQuery.Resolve(uid.Value, ref damageable, false))
             {
@@ -146,14 +255,14 @@ namespace Content.Shared.Damage
                 return damage;
             }
 
-            var before = new BeforeDamageChangedEvent(damage, origin, targetPart, canEvade ?? false); // Shitmed Change
+            var before = new BeforeDamageChangedEvent(damage, origin, targetPart, canEvade ?? false, heavyAttack); // Shitmed Change // Goobstation
             RaiseLocalEvent(uid.Value, ref before);
 
             if (before.Cancelled)
                 return null;
 
             // Shitmed Change Start
-            var partDamage = new TryChangePartDamageEvent(damage, origin, targetPart, ignoreResistances, canSever ?? true, canEvade ?? false, partMultiplier ?? 1.00f);
+            var partDamage = new TryChangePartDamageEvent(damage, origin, targetPart, ignoreResistances, armorPenetration, canSever ?? true, canEvade ?? false, partMultiplier ?? 1.00f);
             RaiseLocalEvent(uid.Value, ref partDamage);
 
             if (partDamage.Evaded || partDamage.Cancelled)
@@ -170,10 +279,11 @@ namespace Content.Shared.Damage
                     // TODO DAMAGE PERFORMANCE
                     // use a local private field instead of creating a new dictionary here..
                     // TODO: We need to add a check to see if the given armor covers the targeted part (if any) to modify or not.
-                    damage = DamageSpecifier.ApplyModifierSet(damage, modifierSet);
+                    damage = DamageSpecifier.ApplyModifierSet(damage,
+                        DamageSpecifier.PenetrateArmor(modifierSet, armorPenetration)); // Goob edit
                 }
 
-                var ev = new DamageModifyEvent(damage, origin, targetPart); // Shitmed Change
+                var ev = new DamageModifyEvent(uid.Value, damage, origin, targetPart, armorPenetration); // Shitmed + Goobstation Change
                 RaiseLocalEvent(uid.Value, ev);
                 damage = ev.Damage;
 
@@ -182,6 +292,8 @@ namespace Content.Shared.Damage
                     return damage;
                 }
             }
+
+            damage = ApplyUniversalAllModifiers(damage);
 
             // TODO DAMAGE PERFORMANCE
             // Consider using a local private field instead of creating a new dictionary here.
@@ -208,6 +320,37 @@ namespace Content.Shared.Damage
                 DamageChanged(uid.Value, damageable, delta, interruptsDoAfters, origin, canSever); // Shitmed Change
 
             return delta;
+        }
+
+        /// <summary>
+        /// Applies the two univeral "All" modifiers, if set.
+        /// Individual damage source modifiers are set in their respective code.
+        /// </summary>
+        /// <param name="damage">The damage to be changed.</param>
+        public DamageSpecifier ApplyUniversalAllModifiers(DamageSpecifier damage)
+        {
+            // Checks for changes first since they're unlikely in normal play.
+            if (UniversalAllDamageModifier == 1f && UniversalAllHealModifier == 1f)
+                return damage;
+
+            foreach (var (key, value) in damage.DamageDict)
+            {
+                if (value == 0)
+                    continue;
+
+                if (value > 0)
+                {
+                    damage.DamageDict[key] *= UniversalAllDamageModifier;
+                    continue;
+                }
+
+                if (value < 0)
+                {
+                    damage.DamageDict[key] *= UniversalAllHealModifier;
+                }
+            }
+
+            return damage;
         }
 
         /// <summary>
@@ -247,6 +390,49 @@ namespace Content.Shared.Damage
             // Shitmed Change End
         }
 
+        /// <summary>
+        ///     Change the DamageContainer of a DamageableComponent. - Goobstation, Rubin Code
+        /// </summary>
+        public void ChangeDamageContainer(EntityUid uid, string newDamageContainerId, DamageableComponent? component = null)
+        {
+            if (!Resolve(uid, ref component, logMissing: false)
+                || newDamageContainerId == component.DamageContainerID)
+            {
+                return;
+            }
+
+            // Try to get the new DamageContainerPrototype
+            if (!_prototypeManager.TryIndex<DamageContainerPrototype>(newDamageContainerId, out var damageContainerPrototype))
+            {
+                // Return early if no DamageContainerPrototype is found
+                return;
+            }
+
+            // Update the DamageContainerID
+            component.DamageContainerID = new ProtoId<DamageContainerPrototype>(newDamageContainerId);
+
+            // Clear the existing damage dictionary
+            component.Damage.DamageDict.Clear();
+
+            // Initialize damage dictionary, using the types and groups from the damage container prototype
+            foreach (var type in damageContainerPrototype.SupportedTypes)
+            {
+                component.Damage.DamageDict.TryAdd(type, FixedPoint2.Zero);
+            }
+
+            foreach (var groupId in damageContainerPrototype.SupportedGroups)
+            {
+                var group = _prototypeManager.Index<DamageGroupPrototype>(groupId);
+                foreach (var type in group.DamageTypes)
+                {
+                    component.Damage.DamageDict.TryAdd(type, FixedPoint2.Zero);
+                }
+            }
+
+            component.Damage.GetDamagePerGroup(_prototypeManager, component.DamagePerGroup);
+            component.TotalDamage = component.Damage.GetTotal();
+        }
+
         public void SetDamageModifierSetId(EntityUid uid, string damageModifierSetId, DamageableComponent? comp = null)
         {
             if (!_damageableQuery.Resolve(uid, ref comp))
@@ -260,12 +446,12 @@ namespace Content.Shared.Damage
         {
             if (_netMan.IsServer)
             {
-                args.State = new DamageableComponentState(component.Damage.DamageDict, component.DamageModifierSetId, component.HealthBarThreshold);
+                args.State = new DamageableComponentState(component.Damage.DamageDict, component.DamageContainerID, component.DamageModifierSetId, component.HealthBarThreshold);
             }
             else
             {
                 // avoid mispredicting damage on newly spawned entities.
-                args.State = new DamageableComponentState(component.Damage.DamageDict.ShallowClone(), component.DamageModifierSetId, component.HealthBarThreshold);
+                args.State = new DamageableComponentState(component.Damage.DamageDict.ShallowClone(), component.DamageContainerID, component.DamageModifierSetId, component.HealthBarThreshold);
             }
         }
 
@@ -298,6 +484,7 @@ namespace Content.Shared.Damage
                 return;
             }
 
+            component.DamageContainerID = state.DamageContainerId;
             component.DamageModifierSetId = state.ModifierSetId;
             component.HealthBarThreshold = state.HealthBarThreshold;
 
@@ -323,6 +510,7 @@ namespace Content.Shared.Damage
         EntityUid? Origin = null,
         TargetBodyPart? TargetPart = null, // Shitmed Change
         bool CanEvade = false, // Lavaland Change
+        bool HeavyAttack = false, // Goobstation
         bool Cancelled = false);
 
     /// <summary>
@@ -334,6 +522,7 @@ namespace Content.Shared.Damage
         EntityUid? Origin = null,
         TargetBodyPart? TargetPart = null,
         bool IgnoreResistances = false,
+        float ArmorPenetration = 0f,
         bool CanSever = true,
         bool CanEvade = false,
         float PartMultiplier = 1.00f,
@@ -352,17 +541,21 @@ namespace Content.Shared.Damage
         // Whenever locational damage is a thing, this should just check only that bit of armour.
         public SlotFlags TargetSlots { get; } = ~SlotFlags.POCKET;
 
+        public readonly EntityUid Target; // Goobstation
         public readonly DamageSpecifier OriginalDamage;
         public DamageSpecifier Damage;
         public EntityUid? Origin;
         public readonly TargetBodyPart? TargetPart; // Shitmed Change
+        public float ArmorPenetration; // Goobstation
 
-        public DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, TargetBodyPart? targetPart = null) // Shitmed Change
+        public DamageModifyEvent(EntityUid target, DamageSpecifier damage, EntityUid? origin = null, TargetBodyPart? targetPart = null, float armorPenetration = 0) // Shitmed + Goobstation Change
         {
+            Target = target; // Goobstation
             OriginalDamage = damage;
             Damage = damage;
             Origin = origin;
             TargetPart = targetPart; // Shitmed Change
+            ArmorPenetration = armorPenetration; // Goobstation
         }
     }
 

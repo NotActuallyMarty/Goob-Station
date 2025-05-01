@@ -1,3 +1,15 @@
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: JermovCircuitBoard
   parent: BaseElectronics
@@ -23,6 +35,18 @@
     laws: ZooimovLawset
 
 - type: entity
+  id: HelpimovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Helpimov)
+  description: An electronics board containing the Helpimov lawset.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: HelpimovLawset
+
+- type: entity
   id: PlayerBorgDerelictSyndicateAssaultBattery
   parent: BorgChassisDerelictSyndicateAssault
   suffix: Battery, Module, Operative, Derelict
@@ -33,7 +57,7 @@
       borg_brain:
       - PositronicBrain
       borg_module:
-      - BorgModuleOperativeUniversal
+      - BorgModuleOperative
       - BorgModuleSyndicateWeaponAdvanced
       # - BorgModuleL6C - No L6 for the derelicts
       # - BorgModuleEsword - Replaced
@@ -46,7 +70,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: RandomMetadata
-    nameSegments: [ names_borg ]
+    nameSegments: [ NamesBorg ]
 
 - type: entity
   id: PlayerBorgDerelictSyndicateAssaultGhostRole
@@ -57,6 +81,8 @@
     name: ghost-role-information-derelict-cyborg-syndicate-name
     description: ghost-role-information-derelict-cyborg-syndicate-description
     rules: ghost-role-information-silicon-rules
+    mindRoles:
+    - MindRoleGhostRoleSilicon
     raffle:
       settings: default
     requirements: # Goobstation - ghost roles requirements

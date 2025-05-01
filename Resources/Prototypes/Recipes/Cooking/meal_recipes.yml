@@ -1,8 +1,190 @@
+# SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 2020 FL-OZ <yetanotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Elijahrane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Ephememory <66768086+Ephememory@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Matz05 <Matz05@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 SweptWasTaken <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 CrudeWax <75271456+CrudeWax@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
+# SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Arendian <137322659+Arendian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 DoubleRiceEddiedd <149714181+DoubleRiceEddiedd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Feluk6174 <77207907+Feluk6174@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Fluffiest Floofers <thebluewulf@gmail.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 SonicHDC <100022571+SonicHDC@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Timothy Teakettle <59849408+timothyteakettle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 dahnte <70238020+dahnte@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 forthbridge <79264743+forthbridge@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 nmajask <nmajask@gmail.com>
+# SPDX-FileCopyrightText: 2023 phunnyguy <90366172+phunnyguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 August Sun <45527070+august-sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CheddaCheez <cheddacheezy@gmail.com>
+# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DieselMohawk <gavin.drinka@gmail.com>
+# SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
+# SPDX-FileCopyrightText: 2024 DrEnzyme <DrEnzyme@gmail.com>
+# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Elysium206 <151651971+Elysium206@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 GreyMario <mariomister541@gmail.com>
+# SPDX-FileCopyrightText: 2024 Gyrandola <pasta.frollagg@gmail.com>
+# SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+# SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MetalSage <metalsage.official@gmail.com>
+# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MisterMecky <mrmecky@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+# SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+# SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 RumiTiger <154005209+RumiTiger@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2024 TheKittehJesus <29379890+SamGithubAccount@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TurboTrackerss14 <130304754+TurboTrackerss14@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Unisol <1929445+Unisol@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 august-sun <45527070+august.sun@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 degradka <69397649+degradka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 goet <6637097+goet@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 marbow <152051971+marboww@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 mhamster <81412348+mhamsterr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 mkanke-real <mikekanke@gmail.com>
+# SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 osjarw <oskariwjarvinen@gmail.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+# SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SG6732 <151011904+SG6732@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Smith <182301147+AgentSmithRadio@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: microwaveMealRecipe
   id: RecipeBun
   name: bun recipe
   result: FoodBreadBun
   time: 5
+  group: Breads
   solids:
     FoodDoughSlice: 1 # one third of a standard bread dough recipe
 
@@ -12,6 +194,7 @@
   name: bagel recipe
   result: FoodBagel
   time: 5
+  group: Breads
   solids:
     FoodDoughRope: 1 # created by rolling a dough slice.
 
@@ -20,6 +203,7 @@
   name: poppyseed bagel recipe
   result: FoodBagelPoppy
   time: 5
+  group: Breads
   solids:
     FoodDoughRope: 1
     PoppySeeds: 1
@@ -29,6 +213,7 @@
   name: cotton bagel recipe
   result: FoodBagelCotton
   time: 5
+  group: Moth
   solids:
     FoodDoughCottonRope: 1
 
@@ -39,6 +224,7 @@
   name: appendix burger recipe
   result: FoodBurgerAppendix
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     OrganHumanAppendix: 1
@@ -48,6 +234,7 @@
   name: bacon burger recipe
   result: FoodBurgerBacon
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatBacon: 1
@@ -58,6 +245,7 @@
   name: baseball burger recipe
   result: FoodBurgerBaseball
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     BaseBallBat: 1
@@ -67,6 +255,7 @@
   name: bearger recipe
   result: FoodBurgerBear
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatBear: 1
@@ -76,6 +265,7 @@
   name: big bite burger recipe
   result: FoodBurgerBig
   time: 15
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 2
@@ -88,6 +278,7 @@
   name: brain burger recipe
   result: FoodBurgerBrain
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     OrganHumanBrain: 1
@@ -97,6 +288,7 @@
   name: cat burger recipe
   result: FoodBurgerCat
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -107,6 +299,7 @@
   name: cheeseburger recipe
   result: FoodBurgerCheese
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -117,6 +310,7 @@
   name: chicken sandwich recipe
   result: FoodBurgerChicken
   time: 10
+  group: Savory
   reagents:
     Mayo: 5
   solids:
@@ -128,6 +322,7 @@
   name: clownburger recipe
   result: FoodBurgerClown
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     ClothingMaskClown: 1
@@ -137,6 +332,7 @@
   name: corgi burger recipe
   result: FoodBurgerCorgi
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatCorgi: 1
@@ -146,6 +342,7 @@
   name: crab burger recipe
   result: FoodBurgerCrab
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatCrab: 2
@@ -155,6 +352,7 @@
   name: crazy hamburger recipe
   result: FoodBurgerCrazy
   time: 15
+  group: Savory
   reagents:
     OilOlive: 15
   solids:
@@ -171,6 +369,7 @@
   name: duck sandwich recipe
   result: FoodBurgerDuck
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatDuck: 1
@@ -181,6 +380,7 @@
   name: empowered burger recipe
   result: FoodBurgerEmpowered
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     SheetPlasma1: 2
@@ -190,6 +390,7 @@
   name: fillet-o-carp burger recipe
   result: FoodBurgerCarp
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatFish: 1
@@ -200,6 +401,7 @@
   name: five alarm burger recipe
   result: FoodBurgerFive
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -210,6 +412,7 @@
   name: ghost burger recipe
   result: FoodBurgerGhost
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     Ectoplasm: 1
@@ -219,6 +422,7 @@
   name: human burger recipe
   result: FoodBurgerHuman
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatHuman: 1
@@ -228,6 +432,7 @@
   name: jelly burger recipe
   result: FoodBurgerJelly
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodJellyAmanita: 1
@@ -237,16 +442,19 @@
   name: McGuffin recipe
   result: FoodBurgerMcguffin
   time: 10
+  group: Savory
+  reagents:
+    Egg: 12
   solids:
     FoodBreadBun: 1
     FoodCheeseSlice: 1
-    FoodEgg: 2
 
 - type: microwaveMealRecipe
   id: RecipeBurgerMcrib
   name: BBQ rib sandwich recipe
   result: FoodBurgerMcrib
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMealRibs: 1
@@ -257,6 +465,7 @@
   name: mime burger recipe
   result: FoodBurgerMime
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     ClothingMaskMime: 1
@@ -266,6 +475,7 @@
   name: plain burger recipe
   result: FoodBurgerPlain
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeat: 1
@@ -275,6 +485,7 @@
   name: rat burger recipe
   result: FoodBurgerRat
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatRat: 1
@@ -284,6 +495,7 @@
   name: roburger recipe
   result: FoodBurgerRobot
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     CapacitorStockPart: 2
@@ -294,6 +506,7 @@
   name: soylent burger recipe
   result: FoodBurgerSoy
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodCheeseSlice: 2
@@ -304,6 +517,7 @@
   name: spell burger recipe
   result: FoodBurgerSpell
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     ClothingHeadHatWizard: 1
@@ -313,20 +527,22 @@
   name: super bite burger recipe
   result: FoodBurgerSuper
   time: 25
+  group: Savory
   reagents:
     TableSalt: 5
+    Egg: 12
   solids:
     FoodBreadBun: 1
     FoodMeat: 2
     FoodCheeseSlice: 2
     FoodTomato: 2
-    FoodEgg: 2
 
 - type: microwaveMealRecipe
   id: RecipeTofuBurger
   name: tofu burger recipe
   result: FoodBurgerTofu
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodTofuSlice: 1
@@ -336,6 +552,7 @@
   name: xenoburger recipe
   result: FoodBurgerXeno
   time: 10
+  group: Savory
   solids:
     FoodBreadBun: 1
     FoodMeatXeno: 1
@@ -344,6 +561,7 @@
   id: RecipeMothRoachburger
   name: mothroachburger recipe
   result: FoodBurgerMothRoach
+  group: Savory
   solids:
     FoodBreadBun: 1
     MobMothroach: 1
@@ -355,6 +573,7 @@
   name: banana bread recipe
   result: FoodBreadBanana
   time: 15
+  group: LoafCakes
   solids:
     FoodDough: 1
     FoodBanana: 1
@@ -364,6 +583,7 @@
   name: cornbread recipe
   result: FoodBreadCorn
   time: 10
+  group: Breads
   solids:
     FoodDoughCornmeal: 1
 
@@ -372,6 +592,7 @@
   name: cream cheese bread recipe
   result: FoodBreadCreamcheese
   time: 15
+  group: Breads
   reagents:
     Milk: 5
   solids:
@@ -383,6 +604,7 @@
   name: meat bread recipe
   result: FoodBreadMeat
   time: 15
+  group: Breads
   solids:
     FoodDough: 1
     FoodMeatCutlet: 2
@@ -393,6 +615,7 @@
   name: mimana bread recipe
   result: FoodBreadMimana
   time: 15
+  group: Breads
   reagents:
     Nothing: 5
   solids:
@@ -404,6 +627,7 @@
   name: bread recipe
   result: FoodBreadPlain
   time: 10
+  group: Breads
   solids:
     FoodDough: 1
 
@@ -412,6 +636,7 @@
   name: cotton bread recipe
   result: FoodBreadCotton
   time: 10
+  group: Moth
   solids:
     FoodDoughCotton: 1
 
@@ -420,6 +645,7 @@
   name: sausage bread recipe
   result: FoodBreadSausage
   time: 15
+  group: Breads
   solids:
     FoodDough: 1
     FoodMeat: 1 #replace with sausage
@@ -429,6 +655,7 @@
   name: spider meat bread recipe
   result: FoodBreadMeatSpider
   time: 15
+  group: Breads
   solids:
     FoodDough: 1
     FoodMeatSpiderCutlet: 2
@@ -439,6 +666,7 @@
   name: tofu bread recipe
   result: FoodBreadTofu
   time: 15
+  group: Breads
   solids:
     FoodDough: 1
     FoodTofu: 1
@@ -448,6 +676,7 @@
   name: xeno meat bread recipe
   result: FoodBreadMeatXeno
   time: 15
+  group: Breads
   solids:
     FoodDough: 1
     FoodMeatXenoCutlet: 2
@@ -460,6 +689,7 @@
   name: baguette recipe
   result: FoodBreadBaguette
   time: 15
+  group: Breads
   reagents:
     TableSalt: 5
     Blackpepper: 5
@@ -471,6 +701,7 @@
   name: baguette recipe
   result: FoodBreadBaguetteCotton
   time: 15
+  group: Moth
   reagents:
     TableSalt: 5
     Blackpepper: 5
@@ -483,6 +714,7 @@
   result: WeaponBaguette
   secretRecipe: true
   time: 15
+  group: Secret
   reagents:
     TableSalt: 5
     Blackpepper: 5
@@ -495,6 +727,7 @@
   name: buttered toast recipe
   result: FoodBreadButteredToast
   time: 5
+  group: Breads
   solids:
     FoodBreadPlainSlice: 1
     FoodButterSlice: 1
@@ -504,6 +737,7 @@
   name: french toast recipe
   result: FoodBreadFrenchToast
   time: 5
+  group: Breakfast
   reagents:
     Milk: 5
     Egg: 12
@@ -515,6 +749,7 @@
   name: garlic bread slice recipe
   result: FoodBreadGarlicSlice
   time: 5
+  group: Breads
   solids:
     FoodBreadPlainSlice: 1
     FoodGarlic: 1
@@ -525,6 +760,7 @@
   name: jelly toast recipe
   result: FoodBreadJellySlice
   time: 5
+  group: Breads
   solids:
     FoodBreadPlainSlice: 1
     FoodJellyAmanita: 1 #replace with jelly
@@ -534,6 +770,7 @@
   name: moldy bread slice recipe
   result: FoodBreadMoldySlice
   time: 5
+  group: Breads
   solids:
     FoodBreadPlainSlice: 1
     FoodFlyAmanita: 1
@@ -543,6 +780,7 @@
   name: two slice recipe
   result: FoodBreadTwoSlice
   time: 5
+  group: Breads
   reagents:
     Wine: 5
   solids:
@@ -553,6 +791,7 @@
   name: onion rings recipe
   result: FoodOnionRings
   time: 15
+  group: Savory
   solids:
     FoodOnionSlice: 1
 
@@ -562,6 +801,7 @@
   name: margherita pizza recipe
   result: FoodPizzaMargherita
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodCheeseSlice: 1
@@ -572,6 +812,7 @@
   name: mushroom pizza recipe
   result: FoodPizzaMushroom
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodMushroom: 5
@@ -581,6 +822,7 @@
   name: meat pizza recipe
   result: FoodPizzaMeat
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodMeat: 3
@@ -592,6 +834,7 @@
   name: vegetable pizza recipe
   result: FoodPizzaVegetable
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodEggplant: 1
@@ -604,6 +847,7 @@
   name: Hawaiian pizza recipe
   result: FoodPizzaPineapple
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodMeatChickenCutlet: 3
@@ -614,6 +858,7 @@
   name: dank pizza recipe
   result: FoodPizzaDank
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     LeavesCannabis: 2
@@ -625,6 +870,7 @@
   name: donk-pocket pizza recipe
   result: FoodPizzaDonkpocket
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodDonkpocketWarm: 3
@@ -636,6 +882,7 @@
   name: spicy rock pizza recipe
   result: FoodPizzaUranium
   time: 30
+  group: Pizza
   solids:
     FoodDoughFlat: 1
     FoodChiliPepper: 2
@@ -647,6 +894,7 @@
   name: cotton pizza recipe
   result: FoodPizzaCotton
   time: 30
+  group: Moth
   solids:
     FoodDoughCottonFlat: 1
     CottonBol: 4
@@ -657,17 +905,18 @@
   name: boiled spaghetti recipe
   result: FoodNoodlesBoiled
   time: 15
+  group: Pasta
   reagents:
     Flour: 15
     Egg: 6
-  solids:
-    FoodButter: 1
+    OilOlive: 5
 
 - type: microwaveMealRecipe
   id: RecipePastaTomato
   name: pasta tomato recipe
   result: FoodNoodles
   time: 10
+  group: Pasta
   solids:
     FoodNoodlesBoiled: 1
     FoodTomato: 2
@@ -677,6 +926,7 @@
   name: spaghetti & meatballs recipe
   result: FoodNoodlesMeatball
   time: 10
+  group: Pasta
   solids:
     FoodNoodlesBoiled: 1
     FoodMeatMeatball: 2
@@ -686,6 +936,7 @@
   name: butter noodles recipe
   result: FoodNoodlesButter
   time: 10
+  group: Pasta
   solids:
     FoodNoodlesBoiled: 1
     FoodButter: 1
@@ -695,6 +946,7 @@
   name: chow mein recipe
   result: FoodNoodlesChowmein
   time: 10
+  group: Pasta
   reagents:
     Egg: 6
   solids:
@@ -708,6 +960,7 @@
   name: oatmeal recipe
   result: FoodOatmeal
   time: 15
+  group: Savory
   reagents:
     Oats: 15
     Water: 10
@@ -719,6 +972,7 @@
   name: boiled rice recipe
   result: FoodRiceBoiled
   time: 15
+  group: Savory
   reagents:
     Rice: 15
     Water: 10
@@ -730,6 +984,7 @@
   name: rice pudding recipe
   result: FoodRicePudding
   time: 15
+  group: Dessert
   reagents:
     Rice: 15
     Milk: 10
@@ -742,6 +997,7 @@
   name: rice and pork recipe
   result: FoodRicePork
   time: 15
+  group: Savory
   solids:
     FoodRiceBoiled: 1
     FoodMeatCutlet: 3
@@ -751,6 +1007,7 @@
   name: black-eyed gumbo recipe
   result: FoodRiceGumbo
   time: 15
+  group: Savory
   solids:
     FoodRiceBoiled: 1
     FoodMeatCutlet: 3
@@ -761,6 +1018,7 @@
   name: egg-fried rice recipe
   result: FoodRiceEgg
   time: 15
+  group: Savory
   reagents:
     Egg: 6
   solids:
@@ -772,6 +1030,7 @@
   name: copypasta recipe
   result: FoodNoodlesCopy
   time: 10
+  group: Pasta
   solids:
     FoodNoodles: 2
 
@@ -781,6 +1040,7 @@
   name: bisque recipe
   result: FoodSoupBisque
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -794,6 +1054,7 @@
   name: meatball soup recipe
   result: FoodSoupMeatball
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -807,6 +1068,7 @@
   name: nettle soup recipe
   result: FoodSoupNettle
   time: 10
+  group: Soup
   reagents:
     Water: 10
     Egg: 6
@@ -820,6 +1082,7 @@
   name: eyeball soup recipe
   result: FoodSoupEyeball
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -833,6 +1096,7 @@
   name: amanita jelly recipe
   result: FoodJellyAmanita
   time: 10
+  group: Savory
   reagents:
     Water: 5
     Vodka: 5
@@ -844,6 +1108,7 @@
   name: onion soup recipe
   result: FoodSoupOnion
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -856,6 +1121,7 @@
   name: mushroom soup recipe
   result: FoodSoupMushroom
   time: 10
+  group: Soup
   reagents:
     Water: 5
     Milk: 5
@@ -868,6 +1134,7 @@
   name: stew recipe
   result: FoodSoupStew
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -884,6 +1151,7 @@
   name: tomato soup recipe
   result: FoodSoupTomato
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -895,6 +1163,7 @@
   name: tomato blood soup recipe
   result: FoodSoupTomatoBlood
   time: 10
+  group: Soup
   reagents:
     Blood: 10
   solids:
@@ -906,6 +1175,7 @@
   name: wing fang chu recipe
   result: FoodSoupWingFangChu
   time: 10
+  group: Soup
   reagents:
     Soysauce: 5
   solids:
@@ -917,6 +1187,7 @@
   name: wing fang chu recipe
   result: FoodSoupWingFangChu
   time: 10
+  group: Soup
   reagents:
     Soysauce: 5
   solids:
@@ -928,6 +1199,7 @@
   name: vegetable soup recipe
   result: FoodSoupVegetable
   time: 10
+  group: Soup
   reagents:
     Water: 5
   solids:
@@ -942,6 +1214,7 @@
   name: clown tears soup recipe
   result: FoodSoupClown
   time: 10
+  group: Soup
   reagents:
     Water: 10
   solids:
@@ -955,6 +1228,7 @@
   name: monkeys delight recipe
   result: FoodSoupMonkey
   time: 10
+  group: Soup
   reagents:
     Flour: 5
     TableSalt: 1
@@ -969,6 +1243,7 @@
   name: bungo soup recipe
   result: FoodSoupBungo
   time: 10
+  group: Soup
   reagents:
     Water: 5
   solids:
@@ -981,6 +1256,7 @@
   name: boiled snail recipe
   result: FoodMeatSnailCooked
   time: 5
+  group: Savory
   reagents:
     Water: 10
   solids:
@@ -991,6 +1267,7 @@
   name: escargot recipe
   result: FoodSoupEscargot
   time: 10
+  group: Soup
   reagents:
     Water: 5
   solids:
@@ -1006,6 +1283,7 @@
   name: amanita pie recipe
   result: FoodPieAmanita
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodFlyAmanita: 1
@@ -1016,6 +1294,7 @@
   name: apple pie recipe
   result: FoodPieApple
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodApple: 3
@@ -1026,6 +1305,7 @@
   name: baklava recipe
   result: FoodPieBaklava
   time: 15
+  group: BarsAndCookies
   solids:
     FoodDoughPie: 1
     FoodSnackPistachios: 1 #i'd rather use a botany crop but we don't have nuts yet
@@ -1036,6 +1316,7 @@
   name: banana cream pie recipe
   result: FoodPieBananaCream
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodBanana: 3
@@ -1046,6 +1327,7 @@
   name: berry clafoutis recipe
   result: FoodPieClafoutis
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodBerries: 3
@@ -1056,6 +1338,7 @@
   name: cherry pie recipe
   result: FoodPieCherry
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodCherry: 5
@@ -1066,6 +1349,7 @@
   name: frosty pie recipe
   result: FoodPieFrosty
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodChillyPepper: 3
@@ -1076,6 +1360,7 @@
   name: meat pie recipe
   result: FoodPieMeat
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodMeat: 3
@@ -1086,6 +1371,7 @@
   name: pumpkin pie recipe
   result: FoodPiePumpkin
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodPumpkin: 1
@@ -1106,6 +1392,7 @@
   name: xeno pie recipe
   result: FoodPieXeno
   time: 15
+  group: Pie
   solids:
     FoodDoughPie: 1
     FoodMeatXeno: 3
@@ -1118,6 +1405,7 @@
   name: chocolate lava tart recipe
   result: FoodTartCoco
   time: 15
+  group: Pie
   reagents:
     Sugar: 5
     Milk: 5
@@ -1131,6 +1419,7 @@
   name: golden apple streusel tart recipe
   result: FoodTartGapple
   time: 15
+  group: Pie
   reagents:
     Gold: 10
     Sugar: 5
@@ -1145,6 +1434,7 @@
   name: grape tart recipe
   result: FoodTartGrape
   time: 15
+  group: Pie
   reagents:
     Sugar: 5
     Milk: 5
@@ -1158,6 +1448,7 @@
   name: mime tart recipe
   result: FoodTartMime
   time: 15
+  group: Pie
   reagents:
     Sugar: 5
     Milk: 5
@@ -1173,6 +1464,7 @@
   name: Cuban carp recipe
   result: FoodMealCubancarp
   time: 15
+  group: Savory
   solids:
     FoodDough: 1
     FoodCheeseSlice: 2
@@ -1184,6 +1476,7 @@
   name: sashimi recipe
   result: FoodMealSashimi
   time: 15
+  group: Savory
   reagents:
     TableSalt: 1
   solids:
@@ -1194,6 +1487,7 @@
   name: salty sweet misocola soup recipe
   result: DisgustingSweptSoup
   time: 15
+  group: Savory
   reagents:
     Cola: 5
   solids:
@@ -1204,6 +1498,7 @@
   name: loaded baked potato recipe
   result: FoodMealPotatoLoaded
   time: 15
+  group: Savory
   solids:
     FoodPotato: 1
     FoodCheeseSlice: 1
@@ -1213,6 +1508,7 @@
   name: space fries recipe
   result: FoodMealFries
   time: 15
+  group: Savory
   reagents:
     TableSalt: 5
   solids:
@@ -1223,6 +1519,7 @@
   name: cheesy fries recipe
   result: FoodMealFriesCheesy
   time: 15
+  group: Savory
   reagents:
     TableSalt: 5
   solids:
@@ -1234,6 +1531,7 @@
   name: carrot fries recipe
   result: FoodMealFriesCarrot
   time: 15
+  group: Savory
   reagents:
     TableSalt: 5
   solids:
@@ -1244,6 +1542,7 @@
   name: nachos recipe
   result: FoodMealNachos
   time: 10
+  group: Savory
   reagents:
     TableSalt: 1
   solids:
@@ -1255,6 +1554,7 @@
   name: cheesy nachos recipe
   result: FoodMealNachosCheesy
   time: 10
+  group: Savory
   reagents:
     TableSalt: 1
   solids:
@@ -1267,6 +1567,7 @@
   name: cuban nachos recipe
   result: FoodMealNachosCuban
   time: 10
+  group: Savory
   reagents:
     Ketchup: 5
   solids:
@@ -1279,6 +1580,7 @@
   name: popcorn recipe
   result: FoodSnackPopcorn
   time: 20
+  group: Savory
   solids:
     FoodCorn: 1
 
@@ -1287,6 +1589,7 @@
   name: pancake recipe
   result: FoodBakedPancake
   time: 5
+  group: Breakfast
   reagents:
     Flour: 5
     Milk: 5
@@ -1297,6 +1600,7 @@
   name: blueberry pancake recipe
   result: FoodBakedPancakeBb
   time: 5
+  group: Breakfast
   reagents:
     Flour: 5
     Milk: 5
@@ -1309,6 +1613,7 @@
   name: waffle recipe
   result: FoodBakedWaffle
   time: 10
+  group: Breakfast
   reagents:
     Flour: 5
     Milk: 5
@@ -1320,6 +1625,7 @@
   name: soy waffle recipe
   result: FoodBakedWaffleSoy
   time: 10
+  group: Breakfast
   reagents:
     Flour: 5
     MilkSoy: 5
@@ -1331,6 +1637,7 @@
   name: cookie recipe
   result: FoodBakedCookie
   time: 5
+  group: BarsAndCookies
   reagents:
     Flour: 5
     Sugar: 5
@@ -1343,6 +1650,7 @@
   name: sugar cookie recipe
   result: FoodBakedCookieSugar
   time: 5
+  group: BarsAndCookies
   reagents:
     Flour: 5
     Sugar: 10
@@ -1354,6 +1662,7 @@
   name: raisin cookie recipe
   result: FoodBakedCookieRaisin
   time: 5
+  group: BarsAndCookies
   reagents:
     Flour: 5
     Sugar: 5
@@ -1365,6 +1674,7 @@
   name: oatmeal cookie recipe
   result: FoodBakedCookieOatmeal
   time: 5
+  group: BarsAndCookies
   reagents:
     Oats: 5
     Sugar: 5
@@ -1376,6 +1686,7 @@
   name: chocolate chip pancake recipe
   result: FoodBakedPancakeCc
   time: 5
+  group: BarsAndCookies
   reagents:
     Flour: 5
     Milk: 5
@@ -1388,6 +1699,7 @@
   name: apple cake recipe
   result: FoodCakeApple
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodApple: 3
@@ -1397,6 +1709,7 @@
   name: carrot cake recipe
   result: FoodCakeCarrot
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodCarrot: 3
@@ -1406,6 +1719,7 @@
   name: lemon cake recipe
   result: FoodCakeLemon
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodLemon: 3
@@ -1415,6 +1729,7 @@
   name: lemoon cake recipe
   result: FoodCakeLemoon
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodLemoon: 2
@@ -1425,6 +1740,7 @@
   name: orange cake recipe
   result: FoodCakeOrange
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodOrange: 3
@@ -1434,6 +1750,7 @@
   name: blueberry cake recipe
   result: FoodCakeBlueberry
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodBerries: 3
@@ -1443,6 +1760,7 @@
   name: lime cake recipe
   result: FoodCakeLime
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodLime: 3
@@ -1452,6 +1770,7 @@
   name: cheese cake recipe
   result: FoodCakeCheese
   time: 5
+  group: Cake
   reagents:
     Cream: 10
   solids:
@@ -1463,6 +1782,7 @@
   name: pumpkin cake recipe
   result: FoodCakePumpkin
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodPumpkin: 1
@@ -1472,6 +1792,7 @@
   name: clown cake recipe
   result: FoodCakeClown
   time: 5
+  group: Cake
   solids:
     ClothingMaskClown: 1
     FoodCakePlain: 1
@@ -1481,6 +1802,7 @@
   name: cake recipe
   result: FoodCakePlain
   time: 15
+  group: Cake
   solids:
     FoodCakeBatter: 1
 
@@ -1489,6 +1811,7 @@
   name: birthday cake recipe
   result: FoodCakeBirthday
   time: 5
+  group: Cake
   reagents:
     Cream: 5
   solids:
@@ -1499,6 +1822,7 @@
   name: chocolate cake recipe
   result: FoodCakeChocolate
   time: 5
+  group: Cake
   solids:
     FoodCakePlain: 1
     FoodSnackChocolateBar: 2
@@ -1508,6 +1832,7 @@
   name: brain cake recipe
   result: FoodCakeBrain
   time: 15
+  group: Cake
   solids:
     FoodCakePlain: 1
     OrganHumanBrain: 1
@@ -1517,6 +1842,7 @@
   name: slime cake recipe
   result: FoodCakeSlime
   time: 5
+  group: Cake
   reagents:
     Slime: 15
   solids:
@@ -1527,6 +1853,7 @@
   name: cat cake recipe
   result: MobCatCake
   time: 15
+  group: Cake
   reagents:
     Milk: 15
     Cognizine: 5
@@ -1540,6 +1867,7 @@
   name: bread dog recipe
   result: MobBreadDog
   time: 15
+  group: Breads
   reagents:
     Cognizine: 5
   solids:
@@ -1552,6 +1880,7 @@
   name: dumplings recipe
   result: FoodBakedDumplings
   time: 15
+  group: Savory
   reagents:
     Water: 10
     UncookedAnimalProteins: 6
@@ -1563,6 +1892,7 @@
   name: brownie recipe
   result: FoodBakedBrownieBatch
   time: 25
+  group: BarsAndCookies
   reagents:
     Flour: 15
     Sugar: 30
@@ -1577,6 +1907,7 @@
   name: warm donk pocket recipe
   result: FoodDonkpocketWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocket: 1
 
@@ -1585,6 +1916,7 @@
   name: warm dank pocket recipe
   result: FoodDonkpocketDankWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketDank: 1
 
@@ -1593,6 +1925,7 @@
   name: warm spicy donk-pocket recipe
   result: FoodDonkpocketSpicyWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketSpicy: 1
 
@@ -1601,6 +1934,7 @@
   name: warm teriyaki-pocket recipe
   result: FoodDonkpocketTeriyakiWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketTeriyaki: 1
 
@@ -1609,6 +1943,7 @@
   name: warm pizza-pocket recipe
   result: FoodDonkpocketPizzaWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketPizza: 1
 
@@ -1617,6 +1952,7 @@
   name: warm honk-pocket recipe
   result: FoodDonkpocketHonkWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketHonk: 1
 
@@ -1625,6 +1961,7 @@
   name: warm berry-pocket recipe
   result: FoodDonkpocketBerryWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketBerry: 1
 
@@ -1633,6 +1970,7 @@
   name: warm stonk-pocket recipe
   result: FoodDonkpocketStonkWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketStonk: 1
 
@@ -1641,6 +1979,7 @@
   name: warm carp-pocket recipe
   result: FoodDonkpocketCarpWarm
   time: 5
+  group: Savory
   solids:
     FoodDonkpocketCarp: 1
 
@@ -1650,6 +1989,7 @@
   name: hot chili recipe
   result: FoodSoupChiliHot
   time: 20
+  group: Soup
   solids:
     FoodBowlBig: 1
     FoodChiliPepper: 1
@@ -1662,6 +2002,7 @@
   name: cold chili recipe
   result: FoodSoupChiliCold
   time: 5
+  group: Soup
   reagents:
     Nitrogen: 5
   solids:
@@ -1672,6 +2013,7 @@
   name: clown's tears recipe
   result: FoodSoupClown
   time: 15
+  group: Soup
   solids:
     FoodBowlBig: 1
     FoodOnionSlice: 1
@@ -1683,6 +2025,7 @@
   name: chili con carnival recipe
   result: FoodSoupChiliClown
   time: 30
+  group: Soup
   solids:
     FoodBowlBig: 1
     FoodChiliPepper: 1
@@ -1696,6 +2039,7 @@
   name: queso recipe
   result: FoodMealQueso
   time: 15
+  group: Soup
   #todo Add blackpepper
   #reagents:
     #blackpepper: 5
@@ -1708,6 +2052,7 @@
   name: BBQ ribs recipe
   result: FoodMealRibs
   time: 15
+  group: Savory
   reagents:
     BbqSauce: 5
   solids:
@@ -1719,6 +2064,7 @@
   name: enchiladas recipe
   result: FoodMealEnchiladas
   time: 20
+  group: Savory
   solids:
     FoodChiliPepper: 2
     FoodMeatCutlet: 1
@@ -1730,6 +2076,7 @@
   name: herb salad recipe
   result: FoodSaladHerb
   time: 5
+  group: Salad
   solids:
     FoodBowlBig: 1
     FoodAmbrosiaVulgaris: 3
@@ -1740,6 +2087,7 @@
   name: valid salad recipe
   result: FoodSaladValid
   time: 5
+  group: Salad
   solids:
     FoodBowlBig: 1
     FoodAmbrosiaVulgaris: 3
@@ -1751,6 +2099,7 @@
   name: coleslaw recipe
   result: FoodSaladColeslaw
   time: 5
+  group: Salad
   reagents:
     Vinaigrette: 5
   solids:
@@ -1763,6 +2112,7 @@
   name: caesar salad recipe
   result: FoodSaladCaesar
   time: 5
+  group: Salad
   reagents:
     OilOlive: 5
   solids:
@@ -1777,6 +2127,7 @@
   name: citrus salad recipe
   result: FoodSaladCitrus
   time: 5
+  group: Salad
   solids:
     FoodBowlBig: 1
     FoodOrange: 1
@@ -1788,6 +2139,7 @@
   name: kimchi salad recipe
   result: FoodSaladKimchi
   time: 5
+  group: Salad
   reagents:
     Vinegar: 5
   solids:
@@ -1801,6 +2153,7 @@
   name: fruit salad recipe
   result: FoodSaladFruit
   time: 5
+  group: Salad
   solids:
     FoodBowlBig: 1
     FoodOrange: 1
@@ -1813,6 +2166,7 @@
   name: jungle salad recipe
   result: FoodSaladJungle
   time: 5
+  group: Salad
   solids:
     FoodBowlBig: 1
     FoodBanana: 1
@@ -1825,6 +2179,7 @@
   name: watermelon fruit bowl recipe
   result: FoodSaladWatermelonFruitBowl
   time: 5
+  group: Salad
   solids:
     FoodWatermelon: 1
     FoodApple: 1
@@ -1840,6 +2195,7 @@
   name: muffin recipe
   result: FoodBakedMuffin
   time: 15
+  group: Dessert
   solids:
     FoodPlateMuffinTin: 1
     FoodDoughSlice: 1
@@ -1851,6 +2207,7 @@
   name: chocolate muffin recipe
   result: FoodBakedMuffinChocolate
   time: 15
+  group: Dessert
   solids:
     FoodPlateMuffinTin: 1
     FoodDoughSlice: 1
@@ -1863,6 +2220,7 @@
   name: berry muffin recipe
   result: FoodBakedMuffinBerry
   time: 15
+  group: Dessert
   solids:
     FoodPlateMuffinTin: 1
     FoodDoughSlice: 1
@@ -1875,6 +2233,7 @@
   name: banana muffin recipe
   result: FoodBakedMuffinBanana
   time: 15
+  group: Dessert
   solids:
     FoodPlateMuffinTin: 1
     FoodDoughSlice: 1
@@ -1887,6 +2246,7 @@
   name: cherry muffin recipe
   result: FoodBakedMuffinCherry
   time: 15
+  group: Dessert
   solids:
     FoodPlateMuffinTin: 1
     FoodDoughSlice: 1
@@ -1909,6 +2269,7 @@
   name: dried tobacco leaves recipe
   result: LeavesTobaccoDried
   time: 10
+  group: Medicinal
   solids:
     LeavesTobacco: 1
 
@@ -1917,6 +2278,7 @@
   name: dried cannabis leaves recipe
   result: LeavesCannabisDried
   time: 10
+  group: Medicinal
   solids:
     LeavesCannabis: 1
 
@@ -1925,6 +2287,7 @@
   name: dried rainbow cannabis leaves recipe
   result: LeavesCannabisRainbowDried
   time: 10
+  group: Medicinal
   solids:
     LeavesCannabisRainbow: 1
 
@@ -1954,6 +2317,7 @@
   name: chevre chaud recipe
   result: FoodBakedChevreChaud
   time: 5
+  group: Savory
   solids:
     FoodChevreSlice: 1
     FoodBreadBaguetteSlice: 1
@@ -1963,6 +2327,7 @@
   name: cotton chevre chaud recipe
   result: FoodBakedChevreChaudCotton
   time: 5
+  group: Moth
   solids:
     FoodChevreSlice: 1
     FoodBreadBaguetteCottonSlice: 1
@@ -1981,6 +2346,7 @@
   name: cannabis brownie recipe
   result: FoodBakedCannabisBrownieBatch
   time: 25
+  group: BarsAndCookies
   reagents:
     Flour: 15
     Sugar: 30
@@ -1994,6 +2360,7 @@
   name: corn in butter recipe
   result: FoodMealCornInButter
   time: 10
+  group: Savory
   solids:
     FoodCorn: 1
     FoodPlate: 1
@@ -2004,6 +2371,7 @@
   name: pea soup recipe
   result: FoodSoupPea
   time: 10
+  group: Soup
   solids:
     FoodPeaPod: 2
     FoodBowlBig: 1
@@ -2015,14 +2383,91 @@
   name: taco shell recipe
   result: FoodTacoShell
   time: 5
+  group: Breads
   solids:
     FoodDoughTortillaFlat: 1 # one third of a standard bread dough recipe
+
+# Goobstation - I'm not reverting whatever shitcode changes piras did in wizden namespace. Feel free to do it on your own. Commit 9245deef
+#- type: microwaveMealRecipe
+#  id: RecipeTacoBeef
+#  name: beef taco recipe
+#  result: FoodTacoBeef
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodTacoShell: 1
+#    FoodMeatCutlet: 1
+#    FoodCheeseSlice: 1
+#
+#- type: microwaveMealRecipe
+#  id: RecipeTacoChicken
+#  name: chicken taco recipe
+#  result: FoodTacoChicken
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodTacoShell: 1
+#    FoodMeatChickenCutlet: 1
+#    FoodCheeseSlice: 1
+#
+#- type: microwaveMealRecipe
+#  id: RecipeTacoFish
+#  name: fish taco recipe
+#  result: FoodTacoFish
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodTacoShell: 1
+#    FoodMeatFish: 1
+#    FoodOnionSlice: 2
+#    FoodTomato: 1
+#    FoodCabbage: 1
+
+#- type: microwaveMealRecipe
+#  id: RecipeTacoRat
+#  name: rat taco recipe
+#  result: FoodTacoRat
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodTacoShell: 1
+#    FoodCheeseSlice: 1
+#    FoodMeatRat: 1
+
+#- type: microwaveMealRecipe
+#  id: RecipeTacoBeefSupreme
+#  name: beef taco supreme recipe
+#  result: FoodTacoBeefSupreme
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodTacoShell: 1
+#    FoodCheeseSlice: 1
+#    FoodMeatCutlet: 1
+#    FoodTomato: 1
+#    FoodCabbage: 1
+#    FoodOnionSlice: 2
+#
+#- type: microwaveMealRecipe
+#  id: RecipeTacoChickenSupreme
+#  name: beef taco supreme recipe
+#  result: FoodTacoChickenSupreme
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodTacoShell: 1
+#    FoodCheeseSlice: 1
+#    FoodMeatChickenCutlet: 1
+#    FoodTomato: 1
+#    FoodCabbage: 1
+#    FoodOnionSlice: 2
 
 - type: microwaveMealRecipe
   id: RecipeCroissant
   name: croissant recipe
   result: FoodBakedCroissant
   time: 5
+  group: Dessert
   solids:
     FoodCroissantRaw: 1
     FoodButterSlice: 1
@@ -2032,6 +2477,7 @@
   name: cotton croissant recipe
   result: FoodBakedCroissantCotton
   time: 5
+  group: Moth
   solids:
     FoodCroissantRawCotton: 1
     FoodButterSlice: 1
@@ -2042,6 +2488,7 @@
   result: WeaponCroissant
   secretRecipe: true
   time: 5
+  group: Secret
   solids:
     FoodCroissantRaw: 1
     FoodButterSlice: 1
@@ -2052,6 +2499,7 @@
   name: inert meat anomaly recipe
   result: FoodMeatAnomaly
   time: 5
+  group: Savory
   solids:
     AnomalyCoreFleshInert: 1
 
@@ -2060,6 +2508,7 @@
   name: meat anomaly recipe
   result: FoodMeatAnomaly
   time: 5
+  group: Savory
   solids:
     AnomalyCoreFlesh: 1
 
@@ -2068,5 +2517,16 @@
   name: cooked meat anomaly recipe
   result: FoodMeatAnomalyCooked
   time: 5
+  group: Savory
   solids:
     FoodMeatAnomaly: 1
+
+- type: microwaveMealRecipe
+  id: RecipeGrilledCheeseSandwich
+  name: grilled cheese sandwich recipe
+  result: FoodBakedGrilledCheeseSandwich
+  time: 10
+  solids:
+    FoodBreadPlainSlice: 2
+    FoodCheeseSlice: 1
+    FoodButterSlice: 1

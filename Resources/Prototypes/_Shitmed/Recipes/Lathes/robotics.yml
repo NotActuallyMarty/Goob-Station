@@ -1,3 +1,11 @@
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: latheRecipe
   abstract: true
   parent: BaseRoboticsRecipe
@@ -87,7 +95,8 @@
 - type: latheRecipe
   id: BorgModuleSurgery
   result: BorgModuleSurgery
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 3
   materials:
     Steel: 250
@@ -97,7 +106,8 @@
 - type: latheRecipe
   id: BorgModuleAdvancedSurgery
   result: BorgModuleAdvancedSurgery
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 3
   materials:
     Steel: 500
@@ -108,7 +118,8 @@
 - type: latheRecipe
   id: JawsOfLifeLeftArm
   result: JawsOfLifeLeftArm
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 1000
@@ -120,7 +131,8 @@
 - type: latheRecipe
   id: JawsOfLifeRightArm
   result: JawsOfLifeRightArm
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 1000
@@ -132,7 +144,8 @@
 - type: latheRecipe
   id: SpeedLeftLeg
   result: SpeedLeftLeg
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 1000
@@ -144,7 +157,8 @@
 - type: latheRecipe
   id: SpeedRightLeg
   result: SpeedRightLeg
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 1000
@@ -156,7 +170,8 @@
 - type: latheRecipe
   id: BasicCyberneticEyes
   result: BasicCyberneticEyes
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 1000
@@ -168,7 +183,8 @@
 - type: latheRecipe
   id: DexLeftHand
   result: DexLeftHand
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 500
@@ -180,7 +196,8 @@
 - type: latheRecipe
   id: DexRightHand
   result: DexRightHand
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 5
   materials:
     Steel: 500

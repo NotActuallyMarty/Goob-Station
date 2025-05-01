@@ -1,3 +1,25 @@
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 using System.Numerics;
@@ -16,11 +38,12 @@ public sealed class HierophantChaserSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedTransformSystem _xform = default!;
 
-    private static readonly Vector2i[] Directions = {
-        new Vector2i( 1,  0),
-        new Vector2i( 0,  1),
-        new Vector2i(-1,  0),
-        new Vector2i( 0, -1)
+    private static readonly Vector2i[] Directions =
+    {
+        new( 1,  0),
+        new( 0,  1),
+        new(-1,  0),
+        new ( 0, -1),
     };
 
     public override void Update(float frameTime)
@@ -54,7 +77,7 @@ public sealed class HierophantChaserSystem : EntitySystem
         if (!Resolve<TransformComponent>(ent, ref ent.Comp2, false))
             return;
 
-        var xform = Transform(ent);
+        var xform = ent.Comp2;
         if (!TryComp<MapGridComponent>(xform.GridUid, out var grid))
             return;
 
@@ -118,15 +141,10 @@ public sealed class HierophantChaserSystem : EntitySystem
     /// </summary>
     private Vector2i TranslateDelta(Vector2 delta)
     {
-        var x = (int) Math.Clamp(MathF.Round(delta.X, 0), -1, 1);
-        var y = (int) Math.Clamp(MathF.Round(delta.Y, 0), -1, 1);
+        delta = Vector2.Clamp(Vector2.Round(delta), new Vector2(-1, -1), new Vector2(1, 1));
 
-        // Prefer movement along the dominant axis.
-        if (Math.Abs(x) >= Math.Abs(y))
-            y = 0;
-        else
-            x = 0;
-
-        return new Vector2i(x, y);
+        return Math.Abs(delta.X) >= Math.Abs(delta.Y) 
+            ? new Vector2i((int)delta.X, 0) 
+            : new Vector2i(0, (int)delta.Y);
     }
 }

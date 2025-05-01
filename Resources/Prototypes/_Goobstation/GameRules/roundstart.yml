@@ -1,3 +1,23 @@
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Fenn <162015305+TooSillyFennec@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: BaseGameRule
   id: Changeling
@@ -7,11 +27,11 @@
     minPlayers: 15
   - type: AntagObjectives
     objectives:
-    - ChangelingStealDNAObjective
+    - ChangelingAbsorbObjective
     - EscapeIdentityObjective
     - ChangelingSurviveObjective
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
@@ -20,6 +40,9 @@
       lateJoinAdditional: true
       mindRoles:
       - MindRoleChangeling
+  - type: Tag
+    tags:
+      - RoundstartAntag
 
 - type: entity
   parent: BaseTraitorRule
@@ -28,7 +51,7 @@
   - type: GameRule
     minPlayers: 30
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ Traitor ]
       max: 5
@@ -40,6 +63,9 @@
       lateJoinAdditional: true
       mindRoles:
       - MindRoleTraitor
+  - type: Tag
+    tags:
+      - CalmAntag
 
 - type: entity
   parent: Changeling
@@ -48,7 +74,7 @@
   - type: GameRule
     minPlayers: 30
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
@@ -57,6 +83,9 @@
       lateJoinAdditional: true
       mindRoles:
       - MindRoleTraitor
+  - type: Tag
+    tags:
+      - CalmAntag
 
 - type: entity
   parent: BaseNukeopsRule
@@ -121,6 +150,9 @@
         - Syndicate
       mindRoles:
       - MindRoleNukeops
+  - type: Tag
+    tags:
+      - CalmAntag
 
 - type: entity
   id: CalmRevs # For Dual Antag Gamemodes
@@ -130,7 +162,7 @@
     minPlayers: 30
   - type: RevolutionaryRule
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ HeadRev ]
       max: 1
@@ -145,7 +177,9 @@
       - type: HeadRevolutionary
       mindRoles:
       - MindRoleHeadRevolutionary
-
+  - type: Tag
+    tags:
+      - CalmAntag
 # Blob
 - type: entity
   id: BlobRule
@@ -163,7 +197,7 @@
   - type: GameRule
     minPlayers: 15
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ Blob ]
       allowNonHumans: true
@@ -188,6 +222,10 @@
     earliestStart: 50
     minimumPlayers: 20
     maxOccurrences: 2
+    chaos:
+      Hostile: 200
+      Death: 300
+      Medical: 200
   - type: BlobSpawnRule
     carrierBlobProtos:
     - SpawnPointGhostBlobRat
@@ -262,3 +300,27 @@
         - Syndicate
       mindRoles:
       - MindRoleNukeops
+
+- type: entity
+  parent: BaseGameRule
+  id: Devil
+  components:
+  - type: DevilRule
+  - type: GameRule
+    minPlayers: 15
+  - type: AntagObjectives
+    objectives:
+    - DevilContractObjective
+  - type: AntagSelection
+    selectionTime: IntraPlayerSpawn
+    agentName: devil-roundend-name
+    definitions:
+    - prefRoles: [ Devil ]
+      max: 2
+      playerRatio: 12
+      mindRoles:
+      - DevilMindRole
+      startingGear: DevilStartingGear
+  - type: Tag
+    tags:
+    - RoundstartAntag

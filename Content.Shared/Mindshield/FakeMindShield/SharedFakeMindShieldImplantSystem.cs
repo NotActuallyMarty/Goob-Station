@@ -1,7 +1,14 @@
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Actions;
 using Content.Shared.Implants;
 using Content.Shared.Implants.Components;
 using Content.Shared.Mindshield.Components;
+using Robust.Shared.Containers;
 
 namespace Content.Shared.Mindshield.FakeMindShield;
 
@@ -13,8 +20,9 @@ public sealed class SharedFakeMindShieldImplantSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<SubdermalImplantComponent, FakeMindShieldToggleEvent>(OnFakeMindShieldToggle);
         SubscribeLocalEvent<FakeMindShieldImplantComponent, ImplantImplantedEvent>(ImplantCheck);
-        SubscribeLocalEvent<FakeMindShieldComponent, ImplantRemovedFromEvent>(ImplantRemove); // Goob fix
+        SubscribeLocalEvent<FakeMindShieldImplantComponent, EntGotRemovedFromContainerMessage>(ImplantDraw);
     }
+
     /// <summary>
     /// Raise the Action of a Implanted user toggling their implant to the FakeMindshieldComponent on their entity
     /// </summary>
@@ -35,10 +43,8 @@ public sealed class SharedFakeMindShieldImplantSystem : EntitySystem
             EnsureComp<FakeMindShieldComponent>(ev.Implanted.Value);
     }
 
-    // Goob edit - removable mindshields, parity/anti-metagame fix. FakeMindShield instead of FakeMindShieldImplant since the latter doesn't trigger
-    private void ImplantRemove(EntityUid uid, FakeMindShieldComponent component, ref ImplantRemovedFromEvent ev)
+    private void ImplantDraw(Entity<FakeMindShieldImplantComponent> ent, ref EntGotRemovedFromContainerMessage ev)
     {
-        if (HasComp<FakeMindShieldImplantComponent>(ev.Implant))
-            RemComp<FakeMindShieldComponent>(ev.Implanted);
+        RemComp<FakeMindShieldComponent>(ev.Container.Owner);
     }
 }

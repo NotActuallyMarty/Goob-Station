@@ -1,3 +1,28 @@
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Spartak <artak10t@gmail.com>
+// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Illiux <newoutlook@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Linus Wacker <70486856+SirDragooon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Intoxicating-Innocence <188202277+Intoxicating-Innocence@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Dora <27211909+catdotjs@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Chemistry;
@@ -140,17 +165,17 @@ namespace Content.Client.Chemistry.UI
 
             // Ensure the Panel Info is updated, including UI elements for Buffer Volume, Output Container and so on
             UpdatePanelInfo(castState);
-    
+
             BufferCurrentVolume.Text = $" {castState.BufferCurrentVolume?.Int() ?? 0}u";
-    
+
             InputEjectButton.Disabled = castState.InputContainerInfo is null;
             OutputEjectButton.Disabled = castState.OutputContainerInfo is null;
             CreateBottleButton.Disabled = castState.OutputContainerInfo?.Reagents == null;
             CreatePillButton.Disabled = castState.OutputContainerInfo?.Entities == null;
-            
+
             UpdateDosageFields(castState);
         }
-        
+
         //assign default values for pill and bottle fields.
         private void UpdateDosageFields(ChemMasterBoundUserInterfaceState castState)
         {
@@ -162,8 +187,9 @@ namespace Content.Client.Chemistry.UI
             var bufferVolume = castState.BufferCurrentVolume?.Int() ?? 0;
 
             PillDosage.Value = (int)Math.Min(bufferVolume, castState.PillDosageLimit);
-            
+
             PillTypeButtons[castState.SelectedPillType].Pressed = true;
+
             PillNumber.IsValid = x => x >= 0 && x <= pillNumberMax;
             PillDosage.IsValid = x => x > 0 && x <= castState.PillDosageLimit;
             BottleDosage.IsValid = x => x >= 0 && x <= bottleAmountMax;
@@ -213,6 +239,17 @@ namespace Content.Client.Chemistry.UI
 
             BufferInfo.Children.Clear();
 
+            // This has to happen here due to people possibly
+            // setting sorting before putting any chemicals
+            BufferSortButton.Text = state.SortingType switch
+            {
+                ChemMasterSortingType.Alphabetical => Loc.GetString("chem-master-window-sort-type-alphabetical"),
+                ChemMasterSortingType.Quantity => Loc.GetString("chem-master-window-sort-type-quantity"),
+                ChemMasterSortingType.Latest => Loc.GetString("chem-master-window-sort-type-latest"),
+                _ => Loc.GetString("chem-master-window-sort-type-none")
+            };
+
+
             if (!state.BufferReagents.Any())
             {
                 BufferInfo.Children.Add(new Label { Text = Loc.GetString("chem-master-window-buffer-empty-text") });
@@ -235,19 +272,48 @@ namespace Content.Client.Chemistry.UI
             };
             bufferHBox.AddChild(bufferVol);
 
-            // initialises rowCount to allow for striped rows
-
-            var rowCount = 0;
+            // This sets up the needed data for sorting later in a list
+            // Its done this way to not repeat having to use same code twice (once for sorting
+            // and once for displaying)
+            var reagentList = new List<(ReagentId reagentId, string name, Color color, FixedPoint2 quantity)>();
             foreach (var (reagent, quantity) in state.BufferReagents)
             {
                 var reagentId = reagent;
                 _prototypeManager.TryIndex(reagentId.Prototype, out ReagentPrototype? proto);
                 var name = proto?.LocalizedName ?? Loc.GetString("chem-master-window-unknown-reagent-text");
                 var reagentColor = proto?.SubstanceColor ?? default(Color);
-                BufferInfo.Children.Add(BuildReagentRow(reagentColor, rowCount++, name, reagentId, quantity, true, true));
+                reagentList.Add(new (reagentId, name, reagentColor, quantity));
+            }
+
+            // We sort here since we need sorted list to be filled first.
+            // You can easily add any new params you need to it.
+            switch (state.SortingType)
+            {
+                case ChemMasterSortingType.Alphabetical:
+                    reagentList = reagentList.OrderBy(x => x.name).ToList();
+                    break;
+
+                case ChemMasterSortingType.Quantity:
+                    reagentList = reagentList.OrderByDescending(x => x.quantity).ToList();
+                    break;
+                case ChemMasterSortingType.Latest:
+                    reagentList = Enumerable.Reverse(reagentList).ToList();
+                    break;
+
+                case ChemMasterSortingType.None:
+                default:
+                    // This case is pointless but it is there for readability
+                    break;
+            }
+
+            // initialises rowCount to allow for striped rows
+            var rowCount = 0;
+            foreach (var reagent in reagentList)
+            {
+                BufferInfo.Children.Add(BuildReagentRow(reagent.color, rowCount++, reagent.name, reagent.reagentId, reagent.quantity, true, true));
             }
         }
-        
+
         private void BuildContainerUI(Control control, ContainerInfo? info, bool addReagentButtons)
         {
             control.Children.Clear();
@@ -295,7 +361,7 @@ namespace Content.Client.Chemistry.UI
                     _prototypeManager.TryIndex(reagent.Reagent.Prototype, out ReagentPrototype? proto);
                     var name = proto?.LocalizedName ?? Loc.GetString("chem-master-window-unknown-reagent-text");
                     var reagentColor = proto?.SubstanceColor ?? default(Color);
-        
+
                     control.Children.Add(BuildReagentRow(reagentColor, rowCount++, name, reagent.Reagent, reagent.Quantity, false, addReagentButtons));
                 }
             }
@@ -315,7 +381,7 @@ namespace Content.Client.Chemistry.UI
             }
             //this calls the separated button builder, and stores the return to render after labels
             var reagentButtonConstructors = CreateReagentTransferButtons(reagent, isBuffer, addReagentButtons);
-            
+
             // Create the row layout with the color panel
             var rowContainer = new BoxContainer
             {
@@ -358,7 +424,7 @@ namespace Content.Client.Chemistry.UI
                 Children = { rowContainer }
             };
         }
-        
+
         public string LabelLine
         {
             get => LabelLineEdit.Text;
