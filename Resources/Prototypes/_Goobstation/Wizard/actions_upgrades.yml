@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Mime Malaise
 - type: entity
   parent: ActionMimeMalaise
@@ -531,7 +536,7 @@
   name: Blink II
   components:
   - type: ActionUseDelayModifier
-    useDelay: 2.4
+    useDelay: 2
 
 - type: entity
   parent: ActionBlinkSpell
@@ -539,23 +544,7 @@
   name: Blink III
   components:
   - type: ActionUseDelayModifier
-    useDelay: 1.8
-
-- type: entity
-  parent: ActionBlinkSpell
-  id: ActionBlinkIV
-  name: Blink IV
-  components:
-  - type: ActionUseDelayModifier
-    useDelay: 1.2
-
-- type: entity
-  parent: ActionBlinkSpell
-  id: ActionBlinkV
-  name: Blink V
-  components:
-  - type: ActionUseDelayModifier
-    useDelay: 0.6
+    useDelay: 1
 
 # Force Wall
 - type: entity
@@ -769,7 +758,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 80
+    useDelay: 75
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -789,7 +778,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 70
+    useDelay: 60
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -812,7 +801,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 60
+    useDelay: 45
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg
@@ -835,7 +824,7 @@
   - type: InstantAction
     raiseOnUser: true
     checkCanInteract: false
-    useDelay: 50
+    useDelay: 30
     itemIconStyle: BigAction
     sound: !type:SoundPathSpecifier
       path: /Audio/_Goobstation/Wizard/monkey.ogg

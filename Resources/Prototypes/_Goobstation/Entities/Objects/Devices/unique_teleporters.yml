@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: BaseItem
   id: BaseLockerTeleporter
@@ -59,28 +64,4 @@
     markerName: NanorepLocker
   - type: UniqueEntityMarker
     markerName: NanorepLocker
-    stationOnly: false
-
-- type: entity
-  parent: BaseLockerTeleporter
-  id: BrigmedicLockerTeleporter
-  name: brigmed locker teleporter
-  description: Device that allows you to request delivery of brigmedic locker.
-  components:
-  - type: Sprite
-    state: brigmed
-  - type: SpawnItemsOnUse
-    items: 
-    - id: UniqueLockerBrigmedicFilled
-
-- type: entity
-  parent: BrigmedicLockerTeleporter
-  id: UniqueBrigmedicLockerTeleporter
-  suffix: Unique
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: UniqueEntityChecker
-    markerName: BrigmedicLocker
-  - type: UniqueEntityMarker
-    markerName: BrigmedicLocker
     stationOnly: false

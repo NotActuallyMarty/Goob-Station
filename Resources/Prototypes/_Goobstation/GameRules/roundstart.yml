@@ -1,3 +1,28 @@
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Fenn <162015305+TooSillyFennec@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: BaseGameRule
   id: Changeling
@@ -7,19 +32,23 @@
     minPlayers: 15
   - type: AntagObjectives
     objectives:
-    - ChangelingStealDNAObjective
+    - ChangelingAbsorbObjective
     - EscapeIdentityObjective
     - ChangelingSurviveObjective
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
       max: 4
       playerRatio: 12
+      jobBlacklist: [ Chaplain ] # GOOBSTATION
       lateJoinAdditional: true
       mindRoles:
       - MindRoleChangeling
+  - type: Tag
+    tags:
+      - RoundstartAntag
 
 - type: entity
   parent: BaseTraitorRule
@@ -28,10 +57,10 @@
   - type: GameRule
     minPlayers: 30
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ Traitor ]
-      max: 5
+      max: 3
       playerRatio: 15
       blacklist:
         components:
@@ -40,6 +69,9 @@
       lateJoinAdditional: true
       mindRoles:
       - MindRoleTraitor
+  - type: Tag
+    tags:
+      - CalmAntag
 
 - type: entity
   parent: Changeling
@@ -48,7 +80,7 @@
   - type: GameRule
     minPlayers: 30
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
@@ -57,6 +89,9 @@
       lateJoinAdditional: true
       mindRoles:
       - MindRoleTraitor
+  - type: Tag
+    tags:
+      - CalmAntag
 
 - type: entity
   parent: BaseNukeopsRule
@@ -79,8 +114,8 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - nukeops-role-commander
-        - SyndicateNamesElite
+        - NamesSyndicateElite
+        nameFormat: name-format-nukie-commander
       - type: NpcFactionMember
         factions:
         - Syndicate
@@ -96,8 +131,8 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - nukeops-role-agent
-        - SyndicateNamesNormal
+        - NamesSyndicateElite
+        nameFormat: name-format-nukie-agent
       - type: NpcFactionMember
         factions:
         - Syndicate
@@ -114,13 +149,16 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - nukeops-role-operator
-        - SyndicateNamesNormal
+        - NamesSyndicateElite
+        nameFormat: name-format-nukie-operator
       - type: NpcFactionMember
         factions:
         - Syndicate
       mindRoles:
       - MindRoleNukeops
+  - type: Tag
+    tags:
+      - CalmAntag
 
 - type: entity
   id: CalmRevs # For Dual Antag Gamemodes
@@ -130,7 +168,7 @@
     minPlayers: 30
   - type: RevolutionaryRule
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ HeadRev ]
       max: 1
@@ -145,7 +183,9 @@
       - type: HeadRevolutionary
       mindRoles:
       - MindRoleHeadRevolutionary
-
+  - type: Tag
+    tags:
+      - CalmAntag
 # Blob
 - type: entity
   id: BlobRule
@@ -163,10 +203,11 @@
   - type: GameRule
     minPlayers: 15
   - type: AntagSelection
-    selectionTime: BeforeJobs
+    selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ Blob ]
       allowNonHumans: true
+      jobBlacklist: [ Chaplain ] # GOOBSTATION
       blacklist:
         components:
         - AntagImmune
@@ -188,6 +229,10 @@
     earliestStart: 50
     minimumPlayers: 20
     maxOccurrences: 2
+    chaos:
+      Hostile: 200
+      Death: 300
+      Medical: 200
   - type: BlobSpawnRule
     carrierBlobProtos:
     - SpawnPointGhostBlobRat
@@ -200,8 +245,9 @@
   components:
   - type: RandomMetadata # this generates the random operation name cuz it's cool.
     nameSegments:
-    - operationPrefixHonkops
-    - operationSuffixHonkops
+    - OperationPrefixHonkops
+    - OperationSuffixHonkops
+    nameFormat: name-format-standard
   - type: NukeopsRule
     localePrefix: "honkops-"
   - type: LoadMapRule
@@ -219,8 +265,9 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - HonkopsNamesPrefix
-        - HonkopsNamesElite
+        - NamesHonkopsPrefix
+        - NamesHonkopsElite
+        nameFormat: name-format-standard
       - type: NpcFactionMember
         factions:
         - Syndicate
@@ -236,8 +283,9 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - HonkopsNamesPrefix
-        - HonkopsNamesElite
+        - NamesHonkopsPrefix
+        - NamesHonkopsElite
+        nameFormat: name-format-standard
       - type: NpcFactionMember
         factions:
         - Syndicate
@@ -255,10 +303,36 @@
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
-        - HonkopsNamesPrefix
-        - HonkopsNamesElite
+        - NamesHonkopsPrefix
+        - NamesHonkopsElite
+        nameFormat: name-format-standard
       - type: NpcFactionMember
         factions:
         - Syndicate
       mindRoles:
       - MindRoleNukeops
+
+- type: entity
+  parent: BaseGameRule
+  id: Devil
+  components:
+  - type: DevilRule
+  - type: GameRule
+    minPlayers: 15
+  - type: AntagObjectives
+    objectives:
+    - DevilContractObjective
+  - type: AntagSelection
+    selectionTime: IntraPlayerSpawn
+    agentName: devil-roundend-name
+    definitions:
+    - prefRoles: [ Devil ]
+      max: 1
+      playerRatio: 20
+      jobBlacklist: [ Chaplain, Mime ] # Chaplain is obvious. Mime can't write.
+      mindRoles:
+      - DevilMindRole
+      startingGear: DevilStartingGear
+  - type: Tag
+    tags:
+    - RoundstartAntag
