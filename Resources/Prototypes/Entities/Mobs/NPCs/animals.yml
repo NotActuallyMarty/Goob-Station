@@ -403,6 +403,7 @@
       5: Dead # Goob edit
   - type: Stamina
     critThreshold: 10
+    animationThreshold: 1
   - type: DamageStateVisuals
     states:
       Alive:
