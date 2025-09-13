@@ -14786,3 +14786,9 @@ Entries:
       message: Floor goblins can no longer use their abilities inside of vents.
   id: 1645
   time: '2025-09-13T08:05:02.0000000+00:00'
+- author: RatherUncreativeName
+  changes:
+    - type: Fix
+      message: Fixed wonderprod not sleeping. Abductors can abduct again.
+  id: 1647
+  time: '2025-09-13T18:23:57.0000000+00:00'
