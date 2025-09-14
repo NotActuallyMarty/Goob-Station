@@ -14870,3 +14870,11 @@ Entries:
       message: Syndiedrobe to uplink
   id: 1659
   time: '2025-09-14T03:50:51.0000000+00:00'
+- author: deltanedas
+  changes:
+    - type: Fix
+      message: >-
+        Fixed devils being able to offer handless mobs handshakes, or do so when
+        they have no hands.
+  id: 1661
+  time: '2025-09-14T10:33:30.0000000+00:00'
