@@ -104,6 +104,8 @@ using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Throwing;
+using Content.Shared.Trigger.Components;
+using Content.Shared.Trigger.Systems;
 using Content.Shared.Chemistry.EntitySystems;
 using JetBrains.Annotations;
 using Robust.Shared.Audio;
@@ -171,15 +173,9 @@ namespace Content.Server.Nutrition.EntitySystems
             {
                 if (_itemSlots.TryEject(uid, itemSlot, user: null, out var item))
                 {
-                    if (TryComp<OnUseTimerTriggerComponent>(item.Value, out var timerTrigger))
+                    if (TryComp<TimerTriggerComponent>(item.Value, out var timerTrigger))
                     {
-                        _trigger.HandleTimerTrigger(
-                            item.Value,
-                            null,
-                            timerTrigger.Delay,
-                            timerTrigger.BeepInterval,
-                            timerTrigger.InitialBeepDelay,
-                            timerTrigger.BeepSound);
+                        _trigger.ActivateTimerTrigger((item.Value, timerTrigger));
                     }
                 }
             }

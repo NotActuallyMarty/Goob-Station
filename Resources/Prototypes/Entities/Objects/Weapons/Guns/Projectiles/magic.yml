@@ -275,6 +275,7 @@
 
 - type: entity
   id: ProjectilePolyboltBase
+  abstract: true
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -287,12 +288,16 @@
     damage:
       types:
         Poison: 0 # Goob edit
-  - type: TriggerOnProjectileHit # Goob edit
-  - type: Reflective # Goobstation
+  - type: TriggerOnCollide
+    fixtureID: projectile
+  - type: PolymorphOnTrigger
+    targetUser: true
+    # Goob start
+  - type: Reflective 
     reflective: Magic
-  - type: Ammo # Goobstation
+  - type: Ammo
     muzzleFlash: null
-  - type: Trail # Goobstation
+  - type: Trail
     lerpTime: 0.05
     frequency: 0.02
     lifetime: 1
@@ -301,6 +306,7 @@
     sprite:
       sprite: /Textures/Objects/Weapons/Guns/Projectiles/magic.rsi
       state: magicm_green
+    # Goob end
 
 - type: entity
   id: ProjectilePolyboltCarp
@@ -313,8 +319,8 @@
     reflective: Magic
   - type: PolymorphOnTrigger
     polymorph: WizardForcedCarp
-  - type: TriggerWhitelist
-    whitelist:
+  - type: WhitelistTriggerCondition
+    userWhitelist:
       components:
       - Body
 
@@ -329,8 +335,8 @@
     reflective: Magic
   - type: PolymorphOnTrigger
     polymorph: WizardForcedMonkey
-  - type: TriggerWhitelist
-    whitelist:
+  - type: WhitelistTriggerCondition
+    userWhitelist:
       components:
       - Body
 
@@ -350,8 +356,8 @@
     reflective: Magic
   - type: PolymorphOnTrigger
     polymorph: WizardWallDoor
-  - type: TriggerWhitelist
-    whitelist:
+  - type: WhitelistTriggerCondition
+    userWhitelist:
       components:
       - Airlock
       - Firelock
@@ -423,8 +429,8 @@
     reflective: Magic
   - type: PolymorphOnTrigger
     polymorph: WizardForcedCluwne
-  - type: TriggerWhitelist
-    whitelist:
+  - type: WhitelistTriggerCondition
+    userWhitelist:
       components:
       - Body
 
@@ -457,7 +463,7 @@
     reflective: Magic
   - type: PolymorphOnTrigger
     polymorph: BreadMorph
-  - type: TriggerWhitelist
-    whitelist:
+  - type: WhitelistTriggerCondition
+    userWhitelist:
       components:
       - Body

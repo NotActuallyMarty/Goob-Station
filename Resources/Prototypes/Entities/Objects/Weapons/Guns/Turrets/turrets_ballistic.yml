@@ -54,7 +54,7 @@
   - type: Repairable
     qualityNeeded: "Anchoring"
     doAfterDelay: 3
-  - type: TriggerWhenEmpty
+  - type: TriggerOnEmptyGunshot
  # Goobstation - no
  #- type: ExplodeOnTrigger
  #- type: Explosive

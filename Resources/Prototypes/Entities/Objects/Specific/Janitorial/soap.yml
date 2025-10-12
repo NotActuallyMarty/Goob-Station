@@ -209,6 +209,7 @@
     triggerGroups: # Goobstation
       types:
       - SlipEntity
+  - type: TriggerOnStepTrigger
   - type: Item
     heldPrefix: syndie
   - type: Fixtures
@@ -229,10 +230,12 @@
         - ItemMask
   - type: DeleteOnTrigger
   - type: EmitSoundOnTrigger
+    predicted: true
+    positional: true
     sound:
       path: "/Audio/Effects/Fluids/splat.ogg"
       params:
-        volume: -20
+        volume: -8
 
 - type: entity
   name: soap

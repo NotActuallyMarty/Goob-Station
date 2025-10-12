@@ -10,6 +10,8 @@ using Content.Server.Speech.Components;
 using Content.Server.Vocalization.Systems;
 using Content.Shared.Database;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Speech;
+using Content.Shared.Speech.Components;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Content.Shared.Whitelist;
