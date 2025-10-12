@@ -7,10 +7,11 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Server.Abilities.Mime;
+using Content.Shared.Abilities.Mime;
 using Content.Server.Chat.Systems;
 using Content.Server._EinsteinEngines.Language;
 using Content.Server.Popups;
+using Content.Server.Speech.Components;
 using Content.Server.Speech.EntitySystems;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Puppet;
