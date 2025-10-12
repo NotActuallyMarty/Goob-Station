@@ -1776,6 +1776,7 @@
       methods: [ Touch ]
       effects:
       - !type:WashCreamPieReaction
+  - type: LayingDown # Goobstation
   - type: Vocal # Goobstation
     sounds:
       Male: MonkeyMode
@@ -1786,7 +1787,6 @@
     hasPainScreams: false
     threshold: 70
     cap: 140
-  - type: Crawler
 
 
 - type: entity

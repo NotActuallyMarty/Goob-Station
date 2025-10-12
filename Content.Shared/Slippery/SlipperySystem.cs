@@ -198,8 +198,7 @@ public sealed class SlipperySystem : EntitySystem
             _audio.PlayPredicted(component.SlipSound, other, other);
         }
 
-        // Slippery is so tied to knockdown that we really just need to force it here.
-        _stun.TryKnockdown(other, component.SlipData.KnockdownTime, force: true);
+        _stun.TryKnockdown(other, component.SlipData.KnockdownTime, true, force: true);
 
         _adminLogger.Add(LogType.Slip, LogImpact.Low, $"{ToPrettyString(other):mob} slipped on collision with {ToPrettyString(uid):entity}");
     }
