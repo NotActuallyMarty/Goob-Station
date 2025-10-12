@@ -7,6 +7,7 @@ using Content.Shared.Damage.Components;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Alert;
+using Content.Shared.Cloning.Events;
 using Content.Shared.Coordinates;
 using Content.Shared.Fluids.Components;
 using Content.Shared.Gravity;
@@ -14,6 +15,7 @@ using Content.Shared.Mobs;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Slippery;
 using Content.Shared.Toggleable;
+using Content.Shared.Trigger.Components.Effects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
@@ -55,6 +57,20 @@ public abstract class SharedRootableSystem : EntitySystem
         SubscribeLocalEvent<RootableComponent, IsWeightlessEvent>(OnIsWeightless);
         SubscribeLocalEvent<RootableComponent, SlipAttemptEvent>(OnSlipAttempt);
         SubscribeLocalEvent<RootableComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeed);
+        SubscribeLocalEvent<RootableComponent, CloningEvent>(OnCloning);
+    }
+
+    private void OnCloning(Entity<RootableComponent> ent, ref CloningEvent args)
+    {
+        if (!args.Settings.EventComponents.Contains(Factory.GetRegistration(ent.Comp.GetType()).Name))
+            return;
+
+        var cloneComp = EnsureComp<RootableComponent>(args.CloneUid);
+        cloneComp.TransferRate = ent.Comp.TransferRate;
+        cloneComp.TransferFrequency = ent.Comp.TransferFrequency;
+        cloneComp.SpeedModifier = ent.Comp.SpeedModifier;
+        cloneComp.RootSound = ent.Comp.RootSound;
+        Dirty(args.CloneUid, cloneComp);
     }
 
     private void OnRootableMapInit(Entity<RootableComponent> entity, ref MapInitEvent args)
@@ -73,6 +89,7 @@ public abstract class SharedRootableSystem : EntitySystem
 
         var actions = new Entity<ActionsComponent?>(entity, comp);
         _actions.RemoveAction(actions, entity.Comp.ActionEntity);
+        _alerts.ClearAlert(entity.Owner, entity.Comp.RootedAlert);
     }
 
     private void OnRootableToggle(Entity<RootableComponent> entity, ref ToggleActionEvent args)
@@ -93,11 +110,12 @@ public abstract class SharedRootableSystem : EntitySystem
 
         entity.Comp.Rooted = !entity.Comp.Rooted;
         _movementSpeedModifier.RefreshMovementSpeedModifiers(entity);
+        _gravity.RefreshWeightless(entity.Owner);
         Dirty(entity);
 
         if (entity.Comp.Rooted)
         {
-            _alerts.ShowAlert(entity, entity.Comp.RootedAlert);
+            _alerts.ShowAlert(entity.Owner, entity.Comp.RootedAlert);
             var curTime = _timing.CurTime;
             if (curTime > entity.Comp.NextUpdate)
             {
@@ -106,7 +124,7 @@ public abstract class SharedRootableSystem : EntitySystem
         }
         else
         {
-            _alerts.ClearAlert(entity, entity.Comp.RootedAlert);
+            _alerts.ClearAlert(entity.Owner, entity.Comp.RootedAlert);
         }
 
         _audio.PlayPredicted(entity.Comp.RootSound, entity.Owner.ToCoordinates(), entity);
@@ -132,7 +150,7 @@ public abstract class SharedRootableSystem : EntitySystem
         if (!ent.Comp.Rooted)
             return;
 
-        if (args.SlipCausingEntity != null && HasComp<DamageUserOnTriggerComponent>(args.SlipCausingEntity))
+        if (args.SlipCausingEntity != null && HasComp<DamageOnTriggerComponent>(args.SlipCausingEntity))
             return;
 
         args.NoSlip = true;
@@ -177,6 +195,6 @@ public abstract class SharedRootableSystem : EntitySystem
     private void OnRefreshMovementSpeed(Entity<RootableComponent> entity, ref RefreshMovementSpeedModifiersEvent args)
     {
         if (entity.Comp.Rooted)
-            args.ModifySpeed(entity.Comp.SpeedModifier, bypassImmunity: true);
+            args.ModifySpeed(entity.Comp.SpeedModifier);
     }
 }
