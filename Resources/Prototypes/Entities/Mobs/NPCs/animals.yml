@@ -1786,6 +1786,8 @@
     hasPainScreams: false
     threshold: 70
     cap: 140
+  - type: Crawler
+
 
 
 - type: entity
