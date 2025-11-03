@@ -65,7 +65,7 @@ using System.Text.Json.Serialization;
 // Shitmed Changes
 using Content.Shared._Shitmed.EntityEffects.Effects;
 using Content.Shared._Shitmed.Targeting;
-using Content.Server.Temperature.Components;
+//using Content.Server.Temperature.Components; todo marty goobify
 using Content.Shared._Shitmed.Damage;
 
 namespace Content.Shared.EntityEffects.Effects
@@ -181,13 +181,13 @@ namespace Content.Shared.EntityEffects.Effects
             if (args is EntityEffectReagentArgs reagentArgs)
                 scale = ScaleByQuantity ? reagentArgs.Quantity * reagentArgs.Scale : reagentArgs.Scale;
 
-            if (ScaleByTemperature.HasValue)
-            {
-                if (!args.EntityManager.TryGetComponent<TemperatureComponent>(args.TargetEntity, out var temp))
-                    scale = FixedPoint2.Zero;
-                else
-                    scale *= ScaleByTemperature.Value.GetEfficiencyMultiplier(temp.CurrentTemperature, scale, false);
-            }
+            // if (ScaleByTemperature.HasValue)
+            // {
+            //     if (!args.EntityManager.TryGetComponent<TemperatureComponent>(args.TargetEntity, out var temp))
+            //         scale = FixedPoint2.Zero;
+            //     else
+            //         scale *= ScaleByTemperature.Value.GetEfficiencyMultiplier(temp.CurrentTemperature, scale, false);
+            // } todo marty goobify
 
             var universalReagentDamageModifier =
                 args.EntityManager.System<DamageableSystem>().UniversalReagentDamageModifier;
