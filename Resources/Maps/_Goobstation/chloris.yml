@@ -31490,7 +31490,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 116.546524,173.3486
       parent: 2
-- proto: BaseChemistryEmptyVial
+- proto: ChemistryEmptyVial
   entities:
   - uid: 21
     components:
