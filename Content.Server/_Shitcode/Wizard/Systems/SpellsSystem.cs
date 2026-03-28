@@ -84,6 +84,7 @@ using Robust.Shared.Spawners;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Shared._Shitcode.Wizard.Components;
+using Content.Shared.Power.Components;
 
 namespace Content.Server._Goobstation.Wizard.Systems; //todo refactor wiz
 
@@ -195,7 +196,7 @@ public sealed class SpellsSystem : SharedSpellsSystem
             if (_divineIntervention.TouchSpellDenied(uid))
                 continue;
 
-            _emp.TryEmpEffects(uid, ev.EnergyConsumption, ev.DisableDuration);
+            _emp.TryEmpEffects(uid, ev.EnergyConsumption, TimeSpan.FromSeconds(ev.DisableDuration));
         }
 
 
