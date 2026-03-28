@@ -14,7 +14,7 @@
 
 using Content.Server._Goobstation.Heretic.EntitySystems.PathSpecific;
 using Content.Server.Atmos.EntitySystems;
-using Content.Server.Atmos.Components;
+using Content.Shared.Atmos.Components;
 using Content.Server.Audio;
 using Content.Server.Light.Components;
 using Content.Server.Light.EntitySystems;
@@ -53,6 +53,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Content.Server.Atmos.Components;
 
 namespace Content.Server.Heretic.EntitySystems.PathSpecific;
 
@@ -80,6 +81,7 @@ public sealed class AristocratSystem : EntitySystem
     [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] private readonly StandingStateSystem _standing = default!;
+    [Dependency] private readonly HereticSystem _heretic = default!;
 
     private static readonly EntProtoId IceTilePrototype = "IceCrust";
     private static readonly ProtoId<ContentTileDefinition> SnowTilePrototype = "FloorAstroSnow";
@@ -338,7 +340,7 @@ public sealed class AristocratSystem : EntitySystem
                 if (ignored.Contains(ent))
                     continue;
 
-                if (hereticQuery.HasComp(ent) || ghoulQuery.HasComp(ent))
+                if (_heretic.IsHereticOrGhoul(ent))
                 {
                     ignored.Add(ent);
                     if (statusQuery.TryComp(ent, out var status))

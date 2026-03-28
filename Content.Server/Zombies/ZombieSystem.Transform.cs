@@ -94,7 +94,6 @@ using Content.Shared.Popups;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Zombies;
 using Content.Shared.Prying.Components;
-using Content.Shared.Traits.Assorted;
 using Robust.Shared.Audio.Systems;
 using Content.Shared.Ghost.Roles.Components;
 using Content.Shared.IdentityManagement;
@@ -102,13 +101,11 @@ using Content.Shared.Tag;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Shared.Roles;
-using Content.Server.Animals.Components;
 using Content.Shared.Mech.Components;
 using Content.Shared.Rejuvenate; // Shitmed Change
 using Content.Shared.NPC.Prototypes;
-using Content.Shared.Roles;
 using Content.Shared.Mech.EntitySystems; // Goobstation
-using Content.Shared.Tag;
+using Content.Server.Cloning; // Goob - zedcure
 
 namespace Content.Server.Zombies;
 
@@ -137,6 +134,7 @@ public sealed partial class ZombieSystem
     [Dependency] private readonly TagSystem _tag = default!;
     [Dependency] private readonly ISharedPlayerManager _player = default!;
     [Dependency] private readonly SharedMechSystem _mech = default!; // Goobstation
+    [Dependency] private readonly CloningSystem _cloning = default!; // Goob - zombie cure
 
     private static readonly ProtoId<TagPrototype> CannotSuicideTag = "CannotSuicide";
     private static readonly ProtoId<NpcFactionPrototype> ZombieFaction = "Zombie";
@@ -196,7 +194,19 @@ public sealed partial class ZombieSystem
 
         //you're a real zombie now, son.
         RaiseLocalEvent(target, new RejuvenateEvent(false, false)); // Shitmed Change
+
+        // Goob start
+        if (!_cloning.TryCloning(target, null, "Antag", out var clone))
+            Log.Error($"Unable to make a clone for zombification of entity {ToPrettyString(target)}");
+        else
+            RemComp<PendingZombieComponent>(clone.Value);
+        // Goob end
+
         var zombiecomp = AddComp<ZombieComponent>(target);
+
+        // Goob - reference to cloned entity, for curing later
+        if (clone is not null)
+            zombiecomp.BeforeZombificationReferenceEnt = clone;
 
         //we need to basically remove all of these because zombies shouldn't
         //get diseases, breath, be thirst, be hungry, die in space, get double sentience, have offspring or be paraplegic.
