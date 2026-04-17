@@ -67,6 +67,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Content.Shared._Shitcode.Roles;
 using Content.Shared.Roles.Components;
+using Content.Shared.Temperature.Components;
 
 namespace Content.Server.Heretic.EntitySystems;
 

@@ -169,6 +169,7 @@ using System.Numerics;
 using Timer = Robust.Shared.Timing.Timer;
 using Content.Shared.Polymorph;
 using Content.Shared.Speech.Components;
+using Content.Shared.Temperature.Components;
 using Robust.Shared.Spawners;
 
 namespace Content.Server.Administration.Systems;
