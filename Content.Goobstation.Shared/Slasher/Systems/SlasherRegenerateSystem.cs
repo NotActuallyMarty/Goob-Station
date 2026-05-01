@@ -70,8 +70,8 @@ public sealed class SlasherRegenerateSystem : EntitySystem
         // If our entity is cuffed/in-cuffs --> uncuff them
         if (TryComp<CuffableComponent>(uid, out var cuffs) && cuffs.Container.ContainedEntities.Count > 0)
         {
-            var cuff = cuffs.LastAddedCuffs;
-            _cuffs.Uncuff(uid, uid, cuff);
+            var cuff = cuffs.Container.ContainedEntities[^1];
+            _cuffs.Uncuff(uid, uid, cuff, cuffs);
             QueueDel(cuff);
         }
 
