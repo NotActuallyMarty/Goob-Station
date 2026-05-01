@@ -28,7 +28,7 @@
       - ReagentId: Blood
         Quantity: 10
   # Goob edit start
-  - type: Food
+  - type: Edible
   - type: BadFood
   - type: SolutionContainerManager
     solutions:
