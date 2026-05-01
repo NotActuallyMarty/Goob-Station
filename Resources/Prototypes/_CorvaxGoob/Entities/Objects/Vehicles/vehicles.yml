@@ -30,6 +30,7 @@
             requireAll: true
             tags:
               - VehicleKey
+              - SkeletonMotorcycleKeys
           insertSound:
             path: /Audio/Effects/Vehicle/vehiclestartup.ogg
             params:
