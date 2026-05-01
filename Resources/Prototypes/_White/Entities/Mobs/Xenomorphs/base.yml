@@ -85,7 +85,7 @@
         layer:
         - MobLayer
   - type: Bloodstream
-    bloodReagent: FluorosulfuricAcid
+    bloodReagents: FluorosulfuricAcid
     bloodMaxVolume: 250
     bloodlossDamage:
       types:

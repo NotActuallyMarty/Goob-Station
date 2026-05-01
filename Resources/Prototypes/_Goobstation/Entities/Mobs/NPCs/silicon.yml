@@ -46,7 +46,7 @@
       amount: 2
   - type: Bloodstream
     bloodMaxVolume: 10
-    bloodReagent: Oil
+    bloodReagents: Oil
   - type: Fixtures
     fixtures:
       fix1:

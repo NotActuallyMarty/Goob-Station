@@ -37,7 +37,7 @@
         Base: dead
   - type: Bloodstream
     bloodMaxVolume: 100
-    bloodReagent: Nitrogen
+    bloodReagents: Nitrogen
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg

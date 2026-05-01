@@ -46,7 +46,7 @@
       amount: 2
   - type: Bloodstream
     bloodMaxVolume: 50
-    bloodReagent: InsectBlood
+    bloodReagents: InsectBlood
   - type: Fixtures
     fixtures:
       fix1:

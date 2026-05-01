@@ -82,7 +82,7 @@
         Base: dead
   - type: Bloodstream
     bloodMaxVolume: 100
-    bloodReagent: Nitrogen # by request
+    bloodReagents: Nitrogen # by request
   - type: MeleeWeapon
     altDisarm: false
     soundHit:
