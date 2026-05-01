@@ -20,7 +20,7 @@ public sealed class MapRestrictedGunSystem : EntitySystem
         if (args.Cancelled
             || xform.MapUid == null
             || _whitelist.IsWhitelistPassOrNull(ent.Comp.PlanetWhitelist, xform.MapUid.Value)
-            && _whitelist.IsBlacklistFailOrNull(ent.Comp.PlanetBlacklist, xform.MapUid.Value))
+            && _whitelist.IsWhitelistPassOrNull(ent.Comp.PlanetBlacklist, xform.MapUid.Value))
             return;
 
         args.Cancelled = true;
