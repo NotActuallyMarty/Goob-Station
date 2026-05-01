@@ -7,7 +7,6 @@
     - type: Tag
       tags:
         - VehicleKey
-        - SkeletonMotorcycleKeys
     - type: Sprite
       sprite: Objects/Vehicles/motorbike.rsi
       state: keys

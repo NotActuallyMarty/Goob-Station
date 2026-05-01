@@ -237,7 +237,10 @@
       - Blob
     - type: Bloodstream
       bloodMaxVolume: 300
-      bloodReagents: Blood
+      bloodReagents:
+        reagents:
+        - ReagentId: Blood
+          Quantity: 1
       bleedReductionAmount: 5
 
 # Observer

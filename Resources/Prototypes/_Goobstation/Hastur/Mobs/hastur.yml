@@ -119,7 +119,10 @@
     - type: NoSlip
     - type: Bloodstream
       bloodMaxVolume: 300
-      bloodReagents: Haloperidol
+      bloodReagents:
+        reagents:
+        - ReagentId: Haloperidol
+          Quantity: 1
     - type: FootstepModifier
       footstepSoundCollection:
         collection: TentacleWalk

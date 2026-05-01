@@ -30,7 +30,10 @@
     - Hair
     - Snout
   - type: Bloodstream
-    bloodReagents: Potassium
+    bloodReagents:
+      reagents:
+      - ReagentId: Potassium
+        Quantity: 1
   - type: Inventory
     templateId: human
 
