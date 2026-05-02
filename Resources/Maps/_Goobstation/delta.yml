@@ -216720,7 +216720,6 @@ entities:
       parent: 2
     - type: BatterySelfRecharger
       autoRechargeRate: 8000000
-      autoRecharge: True
 - proto: SMESBasicEmpty
   entities:
   - uid: 29936
