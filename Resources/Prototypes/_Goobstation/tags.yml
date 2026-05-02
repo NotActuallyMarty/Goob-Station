@@ -89,6 +89,9 @@
   id: BreadEmergency
 
 - type: Tag
+  id: Briefcase
+
+- type: Tag
   id: BreathMask
 
 - type: Tag
