@@ -25,6 +25,10 @@ using Robust.Shared.Timing;
 using Content.Shared.Humanoid;
 using Content.Goobstation.Maths.FixedPoint;
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared.EntityEffects;
+using Content.Shared.Movement.Components;
+using Content.Shared.StatusEffectNew;
+using Robust.Shared.Prototypes;
 
 namespace Content.Goobstation.Shared.Slasher.Systems;
 
@@ -33,6 +37,8 @@ namespace Content.Goobstation.Shared.Slasher.Systems;
 /// </summary>
 public sealed class SlasherMassacreSystem : EntitySystem
 {
+    public static EntProtoId SlasherEffect = "SlasherStatusEffectKillSpeed";
+
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedBodySystem _body = default!;
     [Dependency] private readonly WoundSystem _wounds = default!;
@@ -45,6 +51,9 @@ public sealed class SlasherMassacreSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solutions = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly StatusEffectsSystem _status = default!;
+    [Dependency] private readonly MovementModStatusSystem _movementModStatus = default!;
+
 
     public override void Initialize()
     {
@@ -263,6 +272,9 @@ public sealed class SlasherMassacreSystem : EntitySystem
         // Apply speed boost.
         if (speedBonus > 0)
         {
+            _movementModStatus.TryUpdateMovementSpeedModDuration(user, SlasherEffect, TimeSpan.FromSeconds(comp.SpeedBoostDuration), 1 + speedBonus);
+
+            /*
             var speedComp = EnsureComp<MovespeedModifierMetabolismComponent>(user);
             var speedMultiplier = 1f + speedBonus;
             var endTime = _timing.CurTime + TimeSpan.FromSeconds(comp.SpeedBoostDuration);
@@ -276,7 +288,7 @@ public sealed class SlasherMassacreSystem : EntitySystem
 
                 Dirty(user, speedComp);
                 _movementSpeed.RefreshMovementSpeedModifiers(user);
-            }
+            }*/
         }
 
         // Apply healing via slasherium
