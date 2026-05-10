@@ -767,16 +767,14 @@
     - GrenadeCleanade
     - GrenadeCleanade
     - GrenadeCleanade
-    - GrenadeCleanade
-    - GrenadeCleanade
+    - WeaponPistolMk58
+    - MagazinePistol
     belt:
     - MegaSprayBottleSpaceCleaner
     - Holoprojector
     - LightReplacer
     - WireBrush
     - CrowbarRed
-    - WeaponPistolMk58
-    - MagazinePistol
     - EmergencyMedipen
 
 - type: chameleonOutfit

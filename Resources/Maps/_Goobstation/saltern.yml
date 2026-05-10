@@ -52800,7 +52800,7 @@ entities:
     - type: Transform
       pos: 7.2571726,18.545927
       parent: 2
-- proto: OreSilo
+- proto: MachineMaterialSilo
   entities:
   - uid: 1977
     components:

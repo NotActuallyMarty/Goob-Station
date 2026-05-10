@@ -78977,7 +78977,7 @@ entities:
     - type: Transform
       pos: -13.294653,33.547
       parent: 2
-- proto: OreSilo
+- proto: MachineMaterialSilo
   entities:
   - uid: 15199
     components:

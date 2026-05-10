@@ -58634,10 +58634,10 @@ entities:
       linkedPorts:
         8695:
         - - OreSilo
-            - OreSiloClient
+          - OreSiloClient
         443:
         - - OreSilo
-            - OreSiloClient
+          - OreSiloClient
 - proto: MaterialWoodPlank
   entities:
   - uid: 8618

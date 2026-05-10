@@ -923,8 +923,8 @@ ToxinChemistryBottle: ChemistryBottleToxin
 # CargoMailTeleporter: MailTeleporter # see 2026-2-14
 ClothingMaskBlushingMime: ClothingMaskSexyMime
 ClothingMaskBlushingClown: ClothingMaskSexyMime
-MachineMaterialSilo: null
-CrateMaterialSilo: null
+#MachineMaterialSilo: null
+#CrateMaterialSilo: null
 
 # 2025-03-29
 ClothingBackpackDuffelSyndicateRaidBundle: ClothingBackpackSyndicateRaidBundle
@@ -1109,6 +1109,13 @@ MaterialSilo: MachineMaterialSilo
 BoxMailCapsulePrimed: null
 VendingMachineMailDrobe: null
 MailMetricsCartridge: null
+WeaponMailLake: null
+ComputerShuttleSalvage: null
+GygaxChassis: null
+RipleyMKIIChassis: null
+ClarkeChassis: null
+DurandChassis: null
+MailCapsulePrimed: null
 
 # 2025-10-08
 ClothingBeltAssault: ClothingBeltMilitaryWebbing
