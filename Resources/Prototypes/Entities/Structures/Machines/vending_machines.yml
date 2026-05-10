@@ -2691,7 +2691,7 @@
   components:
   - type: VendingMachine
     pack: NanoMedCivilianWallInventory
-    offState: off-civilian
+    offState: off # Goob
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded

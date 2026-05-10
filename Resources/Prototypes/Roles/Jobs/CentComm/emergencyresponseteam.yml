@@ -740,7 +740,6 @@
     shoes: ClothingShoesGaloshes
     head: ClothingHeadHelmetERTJanitor
     outerClothing: ClothingOuterArmourDurathread # Goobstation
-    pocket2: FlashlightSeclite
 
 - type: startingGear
   id: ERTJanitorGearEVA
@@ -754,7 +753,7 @@
     outerClothing: ClothingOuterHardsuitERTJanitor
     id: ERTJanitorPDA
     ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltJanitorFilled
+    belt: ClothingBeltJanitor
     pocket2: CombatKnife
     pocket1: WeaponPulsePistol # Goobstation Literally described as "Favored sidearm of NT ERT operatives".
   storage:

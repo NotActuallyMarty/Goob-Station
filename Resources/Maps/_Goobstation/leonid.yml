@@ -42451,7 +42451,7 @@ entities:
     - type: Transform
       pos: -60.75722,-52.476006
       parent: 2
-- proto: BoxFolderBlue
+- proto: BoxFolderBlueEmpty
   entities:
   - uid: 5161
     components:
