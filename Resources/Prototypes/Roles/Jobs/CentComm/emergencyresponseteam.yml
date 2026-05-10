@@ -753,9 +753,10 @@
     outerClothing: ClothingOuterHardsuitERTJanitor
     id: ERTJanitorPDA
     ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltJanitor
+    belt: ClothingBeltMilitaryWebbingERT # Goobstation fuck it
     pocket2: CombatKnife
     pocket1: WeaponPulsePistol # Goobstation Literally described as "Favored sidearm of NT ERT operatives".
+    suitstorage: WeaponLauncherHydra # Goobstation
   storage:
     back:
     - TrashBag
@@ -767,14 +768,16 @@
     - GrenadeCleanade
     - GrenadeCleanade
     - GrenadeCleanade
-    - WeaponPistolMk58
-    - MagazinePistol
+    - GrenadeCleanade
+    - GrenadeCleanade
     belt:
     - MegaSprayBottleSpaceCleaner
     - Holoprojector
     - LightReplacer
     - WireBrush
     - CrowbarRed
+    - WeaponPistolMk58
+    - MagazinePistol
     - EmergencyMedipen
 
 - type: chameleonOutfit
