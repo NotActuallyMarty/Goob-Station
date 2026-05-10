@@ -174377,7 +174377,7 @@ entities:
     - type: Transform
       pos: 17.644705,33.63328
       parent: 2
-- proto: MaterialSilo
+- proto: MachineMaterialSilo
   entities:
   - uid: 25843
     components:

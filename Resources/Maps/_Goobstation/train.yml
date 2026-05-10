@@ -80412,7 +80412,7 @@ entities:
     - type: Transform
       pos: 2.6536188,-121.53795
       parent: 2
-- proto: MaterialSilo
+- proto: MachineMaterialSilo
   entities:
   - uid: 13637
     components:
