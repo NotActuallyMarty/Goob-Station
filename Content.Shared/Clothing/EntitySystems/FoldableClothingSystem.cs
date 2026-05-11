@@ -8,9 +8,10 @@
 // SPDX-FileCopyrightText: 2025 paige404 <59348003+paige404@users.noreply.github.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
-
+using System.Linq;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Foldable;
+using Content.Shared.Humanoid;
 using Content.Shared.Inventory;
 using Content.Shared.Item;
 
@@ -34,11 +35,15 @@ public sealed class FoldableClothingSystem : EntitySystem
     // Goobstation Start - #3632
     private void OnMapInit(Entity<FoldableClothingComponent> ent, ref MapInitEvent args)
     {
-        if (ent.Comp.FoldedHideLayers != null || ent.Comp.UnfoldedHideLayers != null)
-        {
-            var hideLayer = EnsureComp<HideLayerClothingComponent>(ent.Owner);
-            hideLayer.Slots = ent.Comp.UnfoldedHideLayers;
-        }
+        if (ent.Comp.FoldedHideLayers.Count == 0 && ent.Comp.UnfoldedHideLayers.Count == 0)
+            return;
+        var hideLayer = EnsureComp<HideLayerClothingComponent>(ent.Owner);
+        var slot = ent.Comp.UnfoldedSlots ?? ent.Comp.FoldedSlots ?? SlotFlags.NONE;
+
+        foreach (var layer in ent.Comp.UnfoldedHideLayers)
+            hideLayer.Layers[layer] = slot;
+
+        Dirty(ent.Owner, hideLayer);
     }
     // Goobstation end
     private void OnFoldAttempt(Entity<FoldableClothingComponent> ent, ref FoldAttemptEvent args)
@@ -88,7 +93,18 @@ public sealed class FoldableClothingSystem : EntitySystem
             // TODO CLOTHING fix this.
             if ((ent.Comp.FoldedHideLayers.Count != 0 || ent.Comp.UnfoldedHideLayers.Count != 0) &&
                 TryComp<HideLayerClothingComponent>(ent.Owner, out var hideLayerComp))
-                hideLayerComp.Slots = ent.Comp.FoldedHideLayers;
+                // Goobstation Start
+            {
+                foreach (var layer in ent.Comp.UnfoldedHideLayers)
+                    hideLayerComp.Layers.Remove(layer);
+
+                var slot = ent.Comp.FoldedSlots ?? ent.Comp.UnfoldedSlots ?? SlotFlags.NONE;
+
+                foreach (var layer in ent.Comp.FoldedHideLayers)
+                    hideLayerComp.Layers[layer] = slot;
+                Dirty(ent.Owner, hideLayerComp);
+            }
+                // Goobstation End
         }
         else
         {
@@ -104,7 +120,19 @@ public sealed class FoldableClothingSystem : EntitySystem
             // TODO CLOTHING fix this.
             if ((ent.Comp.FoldedHideLayers.Count != 0 || ent.Comp.UnfoldedHideLayers.Count != 0) &&
                 TryComp<HideLayerClothingComponent>(ent.Owner, out var hideLayerComp))
-                hideLayerComp.Slots = ent.Comp.UnfoldedHideLayers;
+                // Goobstation Start
+            {
+                foreach (var layer in ent.Comp.FoldedHideLayers)
+                    hideLayerComp.Layers.Remove(layer);
+
+                var slot = ent.Comp.UnfoldedSlots ?? ent.Comp.FoldedSlots ?? SlotFlags.NONE;
+
+                foreach (var layer in ent.Comp.UnfoldedHideLayers)
+                    hideLayerComp.Layers[layer] = slot;
+
+                Dirty(ent.Owner, hideLayerComp);
+            }
+            // Goobstation end
         }
     }
 }
