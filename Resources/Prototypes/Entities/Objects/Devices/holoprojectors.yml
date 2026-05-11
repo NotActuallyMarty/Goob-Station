@@ -123,13 +123,10 @@
     storedRotation: -90
   - type: LimitedCharges
     maxCharges: 6 # same as it was on a medium cell
-  - type: ContainerContainer
-    containers:
-      signs: !type:Container
   # End DeltaV Additions
   - type: Tag
     tags:
-      - HolofanProjector
+    - HolofanProjector
   - type: StaticPrice
     price: 80
   - type: PhysicalComposition #Goobstation - Recycle update
