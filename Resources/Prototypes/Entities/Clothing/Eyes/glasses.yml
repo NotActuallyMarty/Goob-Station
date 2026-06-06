@@ -448,11 +448,6 @@
     - type: SolutionScanner
     - type: IdentityBlocker
       coverage: EYES
-    - type: Tag
-      tags:
-      - CorgiWearable
-      - WhitelistChameleon
-      - PetWearable # Goobstation?
     # Goob start
     - type: StaticPrice #Goobstation - Recycle update
       price: 50
