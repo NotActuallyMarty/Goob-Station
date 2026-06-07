@@ -140,28 +140,28 @@
 
 # Neck
 - type: loadout
-  id: ClothingNeckCloak
+  id: ClothingNeckCloakWhiteCe # Goobstation?
   equipment:
-    neck: ClothingNeckCloak
+    neck: ClothingNeckCloakWhiteCe # Goobstation
   groupBy: "cecloak"
 
 - type: loadout
-  id: ClothingNeckCloakGreenCe
+  id: ClothingNeckCloakGreenCe # Goobstation
   equipment:
-    neck: ClothingNeckCloakGreenCe
+    neck: ClothingNeckCloakGreenCe # Goobstation
   groupBy: "cecloak"
 
 - type: loadout
-  id: ClothingNeckMantleWhiteCE
+  id: ClothingNeckMantleWhiteCe # Goobstation
   equipment:
-    neck: ClothingNeckMantleWhiteCE # Goob edit
+    neck: ClothingNeckMantleWhiteCe # Goob edit
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterCE
   groupBy: "cemantle"
 
 - type: loadout
-  id: ClothingNeckMantleOrangeCE
+  id: ClothingNeckMantleOrangeCE # Goobstation
   equipment:
     neck: ClothingNeckMantleOrangeCE # Goob edit
   effects:
