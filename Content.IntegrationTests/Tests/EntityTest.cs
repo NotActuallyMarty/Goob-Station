@@ -106,6 +106,7 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Components.ContainsKey("RandomSpawner")) // Omu
                 .Where(p => !p.Components.ContainsKey("Marker")) // Omu - we spawn ALL entities including the ones the fucking markers spawn
                 .Where(p => !p.Components.ContainsKey("GameRule")) // Trauma - are you stupid why would you do this
+                .Where(p => !p.Components.ContainsKey("DarkLordMarker")) // 25 % chance to fail tests because the system is fucking shitcoded
                 .Select(p => p.ID)
                 .ToList();
             // Goobstation edit end
@@ -226,6 +227,7 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !p.Components.ContainsKey("RandomSpawner")) // Omu
                     .Where(p => !p.Components.ContainsKey("Marker")) // Omu - we spawn ALL entities including the ones the fucking markers spawn
                     .Where(p => !p.Components.ContainsKey("GameRule")) // Trauma - are you stupid why would you do this
+                    .Where(p => !p.Components.ContainsKey("DarkLordMarker")) // 25 % chance to fail tests because the system is fucking shitcoded
                     .Select(p => p.ID)
                     .ToList();
                 foreach (var protoId in protoIds)
@@ -292,6 +294,7 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Components.ContainsKey("RandomSpawner")) // Omu
                 .Where(p => !p.Components.ContainsKey("Marker")) // Omu - we spawn ALL entities including the ones the fucking markers spawn
                 .Where(p => !p.Components.ContainsKey("GameRule")) // Trauma - are you stupid why would you do this
+                .Where(p => !p.Components.ContainsKey("DarkLordMarker")) // 25 % chance to fail tests because the system is fucking shitcoded
                 .Select(p => p.ID)
                 .ToList();
 
@@ -683,6 +686,7 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !p.Components.ContainsKey("RandomSpawner")) // Omu
                     .Where(p => !p.Components.ContainsKey("Marker")) // Omu - we spawn ALL entities including the ones the fucking markers spawn
                     .Where(p => !p.Components.ContainsKey("GameRule")) // Trauma - are you stupid why would you do this
+                    .Where(p => !p.Components.ContainsKey("DarkLordMarker")) // 25 % chance to fail tests because the system is fucking shitcoded
                     .Select(p => p.ID)
                     .ToList();
 
