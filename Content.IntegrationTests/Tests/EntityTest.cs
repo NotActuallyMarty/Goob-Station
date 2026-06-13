@@ -142,7 +142,7 @@ namespace Content.IntegrationTests.Tests
                     // This area on my local testing is where most of the memory builds up, so run it as long as we can within reason.
                     // i mean yeah you could run the test in batches of entities but its not really a stress test then is it.
 
-                    const int maxTicks = 25; // default wiz is 15 fuck it we need more
+                    const int maxTicks = 35; // default wiz is 15 fuck it we need more
                     const long
                         memoryLimitBytes =
                             13L * 1024 * 1024 * 1024; // 13 GB, depends on how close you wanna fly to the sun.
@@ -330,7 +330,7 @@ namespace Content.IntegrationTests.Tests
                 // This area on my local testing is where most of the memory builds up, so run it as long as we can within reason.
                 // i mean yeah you could run the test in batches of entities but its not really a stress test then is it.
 
-                const int maxTicks = 25; // default wiz is 15 fuck it we need more
+                const int maxTicks = 35; // default wiz is 15 fuck it we need more
                 const long memoryLimitBytes = 13L * 1024 * 1024 * 1024; // 13 GB
 
                 var warninglog = true; // if we stop caring about this test turn this off.
